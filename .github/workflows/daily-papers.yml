@@ -4,6 +4,12 @@ on:
   schedule:
     # 毎日 6:43 JST (= 21:43 UTC)。GitHubの混雑で数分〜数十分遅れることがあります
     - cron: "43 21 * * *"
+  # コードを変更したときは LINE に送らずに動作確認(dry run)だけ行う
+  push:
+    paths:
+      - "paper_bot/**"
+      - "requirements.txt"
+      - ".github/workflows/daily-papers.yml"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -37,11 +43,11 @@ jobs:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
-          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run) && '1' || '0' }}
         run: python paper_bot/daily_papers.py
 
       - name: Record sent papers
-        if: ${{ !inputs.dry_run }}
+        if: ${{ github.event_name != 'push' && !inputs.dry_run }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
