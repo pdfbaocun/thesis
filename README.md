@@ -41,7 +41,7 @@ Actions タブ → **Daily cornea & vitreous papers** → Run workflow。
 - 送信時刻: `.github/workflows/daily-papers.yml` の `cron` (UTC表記。JST = UTC+9)
 - 検索条件: `paper_bot/daily_papers.py` の `TOPICS`
 - 要約の形式: 同ファイルの `SUMMARY_PROMPT`
-- Geminiのモデル: 環境変数 `GEMINI_MODEL` (既定 `gemini-2.5-flash`)
+- Geminiのモデル: 環境変数 `GEMINI_MODEL` (既定 `gemini-3.8-flash`)
 
 ## ローカル実行
 ```bash

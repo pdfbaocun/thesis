@@ -19,13 +19,14 @@ from pathlib import Path
 
 import requests
 from google import genai
+from google.genai import errors as genai_errors
 
 ROOT = Path(__file__).resolve().parent.parent
 SENT_FILE = ROOT / "data" / "sent_pmids.json"
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 LINE_PUSH_URL = "https://api.line.me/v2/bot/message/push"
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
 # 症例報告・コメント・訂正などは除外し、抄録のある英語論文に限定する
 COMMON_FILTER = (
@@ -183,6 +184,8 @@ Abstract:
 
 
 def summarize(paper: dict, client: genai.Client) -> str:
+    """要約に失敗したら例外を投げる(LINEには送らず、送信済みにも記録しない)。"""
+    last_error: Exception | None = None
     for attempt in range(3):
         try:
             response = client.models.generate_content(
@@ -190,10 +193,17 @@ def summarize(paper: dict, client: genai.Client) -> str:
             )
             if response.text:
                 return response.text.strip()
-        except Exception as e:  # 一時的なエラー(混雑など)は再試行
-            print(f"Gemini要約エラー (試行{attempt + 1}): {e}", file=sys.stderr)
+            last_error = RuntimeError("Geminiの応答が空でした")
+        except genai_errors.ClientError as e:
+            # 429(混雑)以外の4xx(モデル名・APIキーの誤りなど)は再試行しても直らない
+            if e.code != 429:
+                raise
+            last_error = e
+        except (genai_errors.ServerError, requests.RequestException) as e:
+            last_error = e
+        print(f"Gemini要約エラー (試行{attempt + 1}): {last_error}", file=sys.stderr)
         time.sleep(10 * (attempt + 1))
-    return "(要約を生成できませんでした。リンク先の抄録をご覧ください)"
+    raise RuntimeError(f"Geminiでの要約に失敗しました: {last_error}")
 
 
 def format_message(topic: dict, paper: dict, summary: str, today: str) -> str:
