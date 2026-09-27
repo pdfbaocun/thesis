@@ -4,6 +4,8 @@ on:
   schedule:
     # 毎日 6:43 JST (= 21:43 UTC)。GitHubの混雑で数分〜数十分遅れることがあります
     - cron: "43 21 * * *"
+    # 予備: 6:43の実行がGeminiの混雑等で失敗したときだけ 7:43 JST に再送信する
+    - cron: "43 22 * * *"
   # コードを変更したときは LINE に送らずに動作確認(dry run)だけ行う
   push:
     paths:
@@ -44,6 +46,7 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run) && '1' || '0' }}
+          SKIP_IF_SENT_TODAY: ${{ github.event_name == 'schedule' && '1' || '0' }}
         run: python paper_bot/daily_papers.py
 
       - name: Record sent papers

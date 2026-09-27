@@ -186,7 +186,8 @@ Abstract:
 def summarize(paper: dict, client: genai.Client) -> str:
     """要約に失敗したら例外を投げる(LINEには送らず、送信済みにも記録しない)。"""
     last_error: Exception | None = None
-    for attempt in range(3):
+    waits = [15, 30, 60, 90, 150]  # 混雑(429/503)時は合計約6分まで待って再試行
+    for attempt in range(len(waits) + 1):
         try:
             response = client.models.generate_content(
                 model=GEMINI_MODEL, contents=SUMMARY_PROMPT.format(**paper)
@@ -202,7 +203,8 @@ def summarize(paper: dict, client: genai.Client) -> str:
         except (genai_errors.ServerError, requests.RequestException) as e:
             last_error = e
         print(f"Gemini要約エラー (試行{attempt + 1}): {last_error}", file=sys.stderr)
-        time.sleep(10 * (attempt + 1))
+        if attempt < len(waits):
+            time.sleep(waits[attempt])
     raise RuntimeError(f"Geminiでの要約に失敗しました: {last_error}")
 
 
@@ -256,6 +258,12 @@ def main() -> int:
     sent = load_sent()
     exclude = {entry["pmid"] for entry in sent["sent"]}
     today = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
+    # 予備の定時実行では、その日の分がすでに送信済みなら何もしない
+    if os.environ.get("SKIP_IF_SENT_TODAY") == "1" and any(
+        entry.get("sent_on") == today for entry in sent["sent"]
+    ):
+        print(f"{today} の論文は送信済みのため終了します")
+        return 0
     client = genai.Client()  # 環境変数 GEMINI_API_KEY を使用
 
     messages, new_entries = [], []
