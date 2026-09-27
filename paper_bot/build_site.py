@@ -203,7 +203,8 @@ def build() -> None:
     papers = json.loads(PAPERS_FILE.read_text(encoding="utf-8"))["papers"] if PAPERS_FILE.exists() else []
     # 要約がまだない論文(作り直し前など)は載せない。新しい日付が上、同じ日は角膜→硝子体→網膜
     order = {key: i for i, key in enumerate(TOPICS)}
-    entries = [e for e in papers if e.get("summary")]
+    # hidden: 的外れだった論文などをサイトから外す(送信済みの記録は残す)
+    entries = [e for e in papers if e.get("summary") and not e.get("hidden")]
     entries.sort(key=lambda e: (e["sent_on"], -order.get(e["topic"], 99)), reverse=True)
 
     if OUT.exists():

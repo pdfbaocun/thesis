@@ -343,10 +343,15 @@ def prepare() -> int:
     if os.environ.get("BACKFILL_ONLY") == "1":
         save_papers(papers)
         return 0
-    # 予備の定時実行では、その日の分がすでに送信済みなら何もしない
-    if os.environ.get("SKIP_IF_SENT_TODAY") == "1" and any(
-        e["sent_on"] == today and e.get("notified") for e in papers
-    ):
+    # 定時実行では、その日の定時実行ですでに送った分野は飛ばす(予備実行での二重送信防止)。
+    # 手動で送った分は数えないので、深夜に手動送信しても朝の定時配信は通常どおり届く
+    scheduled = os.environ.get("SKIP_IF_SENT_TODAY") == "1"
+    done_today = (
+        {e["topic"] for e in papers if e["sent_on"] == today and e.get("notified") and e.get("scheduled")}
+        if scheduled
+        else set()
+    )
+    if done_today and done_today >= {t["key"] for t in TOPICS}:
         print(f"{today} の論文は送信済みのため終了します")
         save_papers(papers)
         return 0
@@ -359,14 +364,16 @@ def prepare() -> int:
         sys.exit(f"不明な分野です: {sorted(unknown)}(cornea / vitreous / retina から選んでください)")
     new_entries = []
     for topic in TOPICS:
-        if only and topic["key"] not in only:
+        if (only and topic["key"] not in only) or topic["key"] in done_today:
             continue
         paper = pick_paper(topic, exclude)
         if paper is None:
             print(f"[{topic['key']}] 未送信の論文が見つかりませんでした", file=sys.stderr)
             continue
         exclude.add(paper["pmid"])  # 複数の分野に該当する論文(硝子体と網膜など)の二重送信を防ぐ
-        new_entries.append(make_entry(paper, topic["key"], summarize(paper, client), today))
+        entry = make_entry(paper, topic["key"], summarize(paper, client), today)
+        entry["scheduled"] = scheduled
+        new_entries.append(entry)
 
     if not new_entries:
         print("新しい論文がありません", file=sys.stderr)
