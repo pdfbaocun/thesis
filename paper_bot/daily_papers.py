@@ -334,8 +334,15 @@ def prepare() -> int:
         return 0
 
     exclude = {e["pmid"] for e in papers}
+    # 手動実行で分野を絞るとき用(例: ONLY_TOPICS=retina)。空ならすべての分野
+    only = {t.strip() for t in os.environ.get("ONLY_TOPICS", "").split(",") if t.strip()}
+    unknown = only - {t["key"] for t in TOPICS}
+    if unknown:
+        sys.exit(f"不明な分野です: {sorted(unknown)}(cornea / vitreous / retina から選んでください)")
     new_entries = []
     for topic in TOPICS:
+        if only and topic["key"] not in only:
+            continue
         paper = pick_paper(topic, exclude)
         if paper is None:
             print(f"[{topic['key']}] 未送信の論文が見つかりませんでした", file=sys.stderr)

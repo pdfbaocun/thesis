@@ -22,6 +22,10 @@ on:
         description: "新しい論文は選ばず、要約の作り直しとサイト更新だけ行う"
         type: boolean
         default: false
+      topics:
+        description: "この分野だけ送る(cornea / vitreous / retina をカンマ区切り。空欄ならすべて)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -58,6 +62,7 @@ jobs:
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
           BACKFILL_ONLY: ${{ inputs.site_only && '1' || '0' }}
+          ONLY_TOPICS: ${{ inputs.topics }}
           SKIP_IF_SENT_TODAY: ${{ github.event_name == 'schedule' && '1' || '0' }}
         run: python paper_bot/daily_papers.py prepare
 
