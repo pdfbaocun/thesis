@@ -4,6 +4,7 @@
   site/index.html          すべての論文(新しい順)
   site/cornea.html         角膜のみ
   site/vitreous.html       硝子体のみ
+  site/retina.html         網膜のみ
   site/papers/<pmid>.html  論文ごとの詳細ページ
 """
 
@@ -22,18 +23,25 @@ OUT = ROOT / "site"
 SITE_NAME = "今日の論文"
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 
-TOPICS = {"cornea": "角膜", "vitreous": "硝子体"}
-TABS = [("index.html", "すべて", None), ("cornea.html", "角膜", "cornea"), ("vitreous.html", "硝子体", "vitreous")]
+TOPICS = {"cornea": "角膜", "vitreous": "硝子体", "retina": "網膜"}
+TABS = [
+    ("index.html", "すべて", None),
+    ("cornea.html", "角膜", "cornea"),
+    ("vitreous.html", "硝子体", "vitreous"),
+    ("retina.html", "網膜", "retina"),
+]
 
 CSS = """
 :root {
   --bg: #f6f5f1; --card: #ffffff; --text: #1f2328; --muted: #656d76; --line: #e3e1da;
   --accent: #0f6e6e; --cornea: #0f6e6e; --cornea-bg: #e2f1ef; --vitreous: #5b4bb7; --vitreous-bg: #ebe8f8;
+  --retina: #b4561b; --retina-bg: #fbeadf;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #15171a; --card: #1e2125; --text: #e8e6e1; --muted: #9aa1a9; --line: #2e3237;
     --accent: #5cc3bb; --cornea: #5cc3bb; --cornea-bg: #1d3533; --vitreous: #a99cf0; --vitreous-bg: #2b2743;
+    --retina: #f0a06a; --retina-bg: #3a2618;
   }
 }
 * { box-sizing: border-box; }
@@ -71,6 +79,7 @@ nav.tabs a[aria-current="page"] { background: var(--text); color: var(--bg); bor
 }
 .badge.cornea { color: var(--cornea); background: var(--cornea-bg); }
 .badge.vitreous { color: var(--vitreous); background: var(--vitreous-bg); }
+.badge.retina { color: var(--retina); background: var(--retina-bg); }
 .empty { color: var(--muted); text-align: center; padding: 48px 0; }
 article h1 { font-size: 1.25rem; line-height: 1.55; margin: 12px 0 6px; }
 article .orig { color: var(--muted); font-size: .85rem; margin: 0 0 4px; }
@@ -137,7 +146,7 @@ def page(title: str, body: str, *, prefix: str, description: str = "", path: str
 <body>
 <div class="wrap">
 <header class="site"><a href="{prefix}index.html"><h1>{SITE_NAME}</h1>
-<p>角膜・硝子体の新着論文を毎日1本ずつ、日本語で要約</p></a></header>
+<p>角膜・硝子体・網膜の新着論文を毎日1本ずつ、日本語で要約</p></a></header>
 {body}
 <footer>要約はGoogle Geminiが論文の抄録から自動生成したものです。誤りを含む可能性があるため、診療や研究に用いる際は必ず原著をご確認ください。</footer>
 </div>
@@ -192,7 +201,7 @@ def render_detail(e: dict) -> str:
 
 def build() -> None:
     papers = json.loads(PAPERS_FILE.read_text(encoding="utf-8"))["papers"] if PAPERS_FILE.exists() else []
-    # 要約がまだない論文(作り直し前など)は載せない。新しい日付が上、同じ日は角膜→硝子体
+    # 要約がまだない論文(作り直し前など)は載せない。新しい日付が上、同じ日は角膜→硝子体→網膜
     order = {key: i for i, key in enumerate(TOPICS)}
     entries = [e for e in papers if e.get("summary")]
     entries.sort(key=lambda e: (e["sent_on"], -order.get(e["topic"], 99)), reverse=True)
@@ -203,7 +212,7 @@ def build() -> None:
     (OUT / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
 
-    description = "角膜・硝子体の新着論文を毎日1本ずつ、日本語で要約"
+    description = "角膜・硝子体・網膜の新着論文を毎日1本ずつ、日本語で要約"
     for href, label, topic in TABS:
         subset = [e for e in entries if topic is None or e["topic"] == topic]
         title = SITE_NAME if topic is None else f"{label}の論文 | {SITE_NAME}"

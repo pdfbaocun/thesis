@@ -1,4 +1,4 @@
-"""角膜・硝子体の論文を毎日1本ずつ選び、日本語要約をLINEに送信する。
+"""角膜・硝子体・網膜の論文を毎日1本ずつ選び、日本語要約をLINEに送信する。
 
 - 論文検索: PubMed (NCBI E-utilities)
 - 要約: Google Gemini API
@@ -57,6 +57,15 @@ TOPICS = [
         "query": (
             "(vitreous body[mh] OR vitrectomy[mh] OR vitreous[tiab]"
             " OR vitrectomy[tiab] OR vitreoretinal[tiab])"
+        ),
+    },
+    {
+        "key": "retina",
+        "label": "網膜",
+        "emoji": "📷",
+        "query": (
+            "(retina[mh] OR retinal diseases[mh] OR retina[tiab] OR retinal[tiab]"
+            " OR macular[tiab] OR retinopathy[tiab])"
         ),
     },
 ]
@@ -331,7 +340,7 @@ def prepare() -> int:
         if paper is None:
             print(f"[{topic['key']}] 未送信の論文が見つかりませんでした", file=sys.stderr)
             continue
-        exclude.add(paper["pmid"])  # 角膜・硝子体の両方に該当する論文の二重送信を防ぐ
+        exclude.add(paper["pmid"])  # 複数の分野に該当する論文(硝子体と網膜など)の二重送信を防ぐ
         new_entries.append(make_entry(paper, topic["key"], summarize(paper, client), today))
 
     if not new_entries:
