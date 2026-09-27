@@ -1,3 +1,16 @@
 {
-  "sent": []
+  "sent": [
+    {
+      "pmid": "42781431",
+      "topic": "cornea",
+      "title": "A bioactivity-enhanced thermosensitive amnion-derived hydrogel with sustained IGF-1 release: A multitargeted and efficient strategy for corneal injury repair.",
+      "sent_on": "2026-09-27"
+    },
+    {
+      "pmid": "42761686",
+      "topic": "vitreous",
+      "title": "Impact of macular status on intraocular lens power estimation in proliferative diabetic retinopathy eyes undergoing phacovitrectomy.",
+      "sent_on": "2026-09-27"
+    }
+  ]
 }
