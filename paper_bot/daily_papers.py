@@ -40,6 +40,22 @@ COMMON_FILTER = (
     " OR letter[pt] OR retracted publication[pt])"
 )
 
+# 眼科の専門誌に限定する(PubMedの雑誌略称。追加・削除はここで行う)
+OPHTHALMOLOGY_JOURNALS = [
+    # 総合誌
+    "Ophthalmology", "Am J Ophthalmol", "JAMA Ophthalmol", "Br J Ophthalmol",
+    "Invest Ophthalmol Vis Sci", "Prog Retin Eye Res", "Surv Ophthalmol", "Eye (Lond)",
+    "Acta Ophthalmol", "Graefes Arch Clin Exp Ophthalmol", "Clin Exp Ophthalmol",
+    "Asia Pac J Ophthalmol (Phila)", "Transl Vis Sci Technol", "Curr Opin Ophthalmol",
+    "Jpn J Ophthalmol", "Ophthalmologica", "Ophthalmol Ther", "Eye Vis (Lond)",
+    # 網膜・硝子体
+    "Retina", "Ophthalmol Retina", "Int J Retina Vitreous",
+    "Ophthalmic Surg Lasers Imaging Retina",
+    # 角膜・前眼部
+    "Cornea", "Ocul Surf", "J Cataract Refract Surg", "J Refract Surg", "Cont Lens Anterior Eye",
+]
+JOURNAL_FILTER = " AND (" + " OR ".join(f'"{j}"[ta]' for j in OPHTHALMOLOGY_JOURNALS) + ")"
+
 # 抄録で少し触れているだけの論文を避けるため、キーワードはタイトル([ti])、
 # MeSHは主要テーマ([majr])に限定する
 TOPICS = [
@@ -101,7 +117,7 @@ def search_pmids(query: str, days: int, retmax: int = 200) -> list[str]:
     resp = ncbi_get(
         "esearch.fcgi",
         {
-            "term": query + COMMON_FILTER,
+            "term": query + JOURNAL_FILTER + COMMON_FILTER,
             "reldate": days,
             "datetype": "edat",
             "sort": "pub_date",

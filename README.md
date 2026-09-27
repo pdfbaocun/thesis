@@ -7,7 +7,7 @@ Gemini で日本語要約して LINE に送ります。
 - まとめサイト「今日の論文」(https://pdfbaocun.github.io/thesis/)も毎朝自動で更新され、LINEのメッセージにはサイトへのリンクが付きます(要件は `docs/requirements.md`)
 - 1本の論文が複数の分野(硝子体と網膜など)に該当しても、同じ日に二重には送りません
 - 直近30日の新しい論文を優先し、候補が尽きたら 90日 → 1年 → 5年 と範囲を広げます
-- 症例報告・レター・コメント等は除外、抄録のある英語論文のみ
+- 眼科の専門誌に掲載された、抄録のある英語論文のみ(症例報告・レター・コメント等は除外)
 - Geminiが混雑で失敗した日は、7:43 (JST) の予備実行で送り直します(成功済みの日は何もしません)
 
 ## 初期設定
@@ -45,7 +45,7 @@ Actions タブ → **Daily cornea & vitreous papers** → Run workflow。
 
 ## カスタマイズ
 - 送信時刻: `.github/workflows/daily-papers.yml` の `cron` (UTC表記。JST = UTC+9)
-- 検索条件: `paper_bot/daily_papers.py` の `TOPICS`
+- 検索条件: `paper_bot/daily_papers.py` の `TOPICS`(対象の雑誌は `OPHTHALMOLOGY_JOURNALS`)
 - 要約の形式: 同ファイルの `SUMMARY_PROMPT`
 - サイトの見た目: `paper_bot/build_site.py`
 - Geminiのモデル: 環境変数 `GEMINI_MODEL` (既定 `gemini-3.8-flash`)
