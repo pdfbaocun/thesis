@@ -186,7 +186,8 @@ Abstract:
 def summarize(paper: dict, client: genai.Client) -> str:
     """要約に失敗したら例外を投げる(LINEには送らず、送信済みにも記録しない)。"""
     last_error: Exception | None = None
-    waits = [15, 30, 60, 90, 150]  # 混雑(429/503)時は合計約6分まで待って再試行
+    # 混雑(503)や分単位の上限(429)は待って再試行。無料枠は1日20回なので回数は控えめにする
+    waits = [30, 60, 120]
     for attempt in range(len(waits) + 1):
         try:
             response = client.models.generate_content(
@@ -196,8 +197,8 @@ def summarize(paper: dict, client: genai.Client) -> str:
                 return response.text.strip()
             last_error = RuntimeError("Geminiの応答が空でした")
         except genai_errors.ClientError as e:
-            # 429(混雑)以外の4xx(モデル名・APIキーの誤りなど)は再試行しても直らない
-            if e.code != 429:
+            # 4xx(モデル名・APIキーの誤りなど)や1日の無料枠切れは再試行しても直らない
+            if e.code != 429 or "PerDay" in str(e):
                 raise
             last_error = e
         except (genai_errors.ServerError, requests.RequestException) as e:
