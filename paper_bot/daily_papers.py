@@ -40,14 +40,16 @@ COMMON_FILTER = (
     " OR letter[pt] OR retracted publication[pt])"
 )
 
+# 抄録で少し触れているだけの論文を避けるため、キーワードはタイトル([ti])、
+# MeSHは主要テーマ([majr])に限定する
 TOPICS = [
     {
         "key": "cornea",
         "label": "角膜",
         "emoji": "👁",
         "query": (
-            "(cornea[mh] OR corneal diseases[mh] OR cornea[tiab] OR corneal[tiab]"
-            " OR keratoconus[tiab] OR keratitis[tiab] OR keratoplasty[tiab])"
+            "(cornea[majr] OR corneal diseases[majr] OR cornea[ti] OR corneal[ti]"
+            " OR keratoconus[ti] OR keratitis[ti] OR keratoplasty[ti])"
         ),
     },
     {
@@ -55,8 +57,8 @@ TOPICS = [
         "label": "硝子体",
         "emoji": "🔬",
         "query": (
-            "(vitreous body[mh] OR vitrectomy[mh] OR vitreous[tiab]"
-            " OR vitrectomy[tiab] OR vitreoretinal[tiab])"
+            "(vitreous body[majr] OR vitrectomy[majr] OR vitreous[ti]"
+            " OR vitrectomy[ti] OR vitreoretinal[ti])"
         ),
     },
     {
@@ -64,8 +66,8 @@ TOPICS = [
         "label": "網膜",
         "emoji": "📷",
         "query": (
-            "(retina[mh] OR retinal diseases[mh] OR retina[tiab] OR retinal[tiab]"
-            " OR macular[tiab] OR retinopathy[tiab])"
+            "(retina[majr] OR retinal diseases[majr] OR retina[ti] OR retinal[ti]"
+            " OR macular[ti] OR retinopathy[ti])"
         ),
     },
 ]
