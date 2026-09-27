@@ -6,7 +6,7 @@ on:
     - cron: "43 21 * * *"
     # 予備: 6:43の実行がGeminiの混雑等で失敗したときだけ 7:43 JST に再送信する
     - cron: "43 22 * * *"
-  # コードを変更したときは LINE に送らずに動作確認(dry run)だけ行う
+  # サイトやコードを変更したときは、サイトだけ作り直して公開する(論文選び・LINE送信はしない)
   push:
     paths:
       - "paper_bot/**"
@@ -15,12 +15,18 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "LINEに送らずログに出力するだけ"
+        description: "LINEに送らずログに出力するだけ(サイトも更新しない)"
+        type: boolean
+        default: false
+      site_only:
+        description: "新しい論文は選ばず、要約の作り直しとサイト更新だけ行う"
         type: boolean
         default: false
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-papers
@@ -29,6 +35,9 @@ concurrency:
 jobs:
   send:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,22 +48,49 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Pick papers, summarize, and send to LINE
+      - name: Set site URL
+        run: echo "SITE_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_ENV"
+
+      - name: Pick papers and summarize
+        if: ${{ github.event_name != 'push' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          BACKFILL_ONLY: ${{ inputs.site_only && '1' || '0' }}
+          SKIP_IF_SENT_TODAY: ${{ github.event_name == 'schedule' && '1' || '0' }}
+        run: python paper_bot/daily_papers.py prepare
+
+      - name: Build site
+        if: ${{ !inputs.dry_run }}
+        run: python paper_bot/build_site.py
+
+      # サイトの公開に失敗しても、LINEへの配信は続ける
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ !inputs.dry_run }}
+        continue-on-error: true
+        with:
+          path: site
+
+      - name: Publish site
+        id: deploy
+        if: ${{ !inputs.dry_run }}
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Send to LINE
+        if: ${{ github.event_name != 'push' && !inputs.dry_run }}
+        env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
-          DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run) && '1' || '0' }}
-          SKIP_IF_SENT_TODAY: ${{ github.event_name == 'schedule' && '1' || '0' }}
-        run: python paper_bot/daily_papers.py
+        run: python paper_bot/daily_papers.py send
 
-      - name: Record sent papers
+      - name: Record papers
         if: ${{ github.event_name != 'push' && !inputs.dry_run }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sent_pmids.json
+          git add data/papers.json
           git diff --cached --quiet && exit 0
-          git commit -m "Record papers sent on $(TZ=Asia/Tokyo date +%F)"
+          git commit -m "Record papers on $(TZ=Asia/Tokyo date +%F)"
           git push

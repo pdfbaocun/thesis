@@ -3,7 +3,8 @@
 毎朝 6:43 (JST) ごろに、PubMed から **角膜** と **硝子体** の論文を1本ずつ選び、
 Gemini で日本語要約して LINE に送ります。
 
-- 送信済みの論文は `data/sent_pmids.json` に記録され、以後は送られません
+- 送信した論文と要約は `data/papers.json` に記録され、以後は送られません
+- まとめサイト「今日の論文」(https://pdfbaocun.github.io/thesis/)も毎朝自動で更新され、LINEのメッセージにはサイトへのリンクが付きます(要件は `docs/requirements.md`)
 - 1本の論文が角膜・硝子体の両方に該当しても、同じ日に二重には送りません
 - 直近30日の新しい論文を優先し、候補が尽きたら 90日 → 1年 → 5年 と範囲を広げます
 - 症例報告・レター・コメント等は除外、抄録のある英語論文のみ
@@ -34,14 +35,19 @@ Gemini で日本語要約して LINE に送ります。
 | `GEMINI_API_KEY` | ✅ | Gemini APIキー |
 | `NCBI_API_KEY` | 任意 | PubMedのレート制限緩和用 |
 
-### 4. 動作確認
+### 4. GitHub Pages を有効にする(まとめサイト用)
+Settings → Pages → Build and deployment の Source を **GitHub Actions** にします。
+
+### 5. 動作確認
 Actions タブ → **Daily cornea & vitreous papers** → Run workflow。
 `dry_run` にチェックするとLINEに送らずログに出力するだけになります。
+`site_only` にチェックすると、新しい論文は選ばずにサイトだけ作り直します。
 
 ## カスタマイズ
 - 送信時刻: `.github/workflows/daily-papers.yml` の `cron` (UTC表記。JST = UTC+9)
 - 検索条件: `paper_bot/daily_papers.py` の `TOPICS`
 - 要約の形式: 同ファイルの `SUMMARY_PROMPT`
+- サイトの見た目: `paper_bot/build_site.py`
 - Geminiのモデル: 環境変数 `GEMINI_MODEL` (既定 `gemini-3.8-flash`)
 
 ## ローカル実行

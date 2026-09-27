@@ -3,7 +3,11 @@
 - 論文検索: PubMed (NCBI E-utilities)
 - 要約: Google Gemini API
 - 送信: LINE Messaging API (push message)
-- 重複防止: 送信済みPMIDを data/sent_pmids.json に記録
+- 保存・重複防止: 選んだ論文と要約を data/papers.json に記録(まとめサイトの元データ)
+
+使い方:
+  python daily_papers.py prepare  論文を選んで要約し、data/papers.json に追加する
+  python daily_papers.py send     まだLINEに送っていない論文を送る
 """
 
 from __future__ import annotations
@@ -22,7 +26,8 @@ from google import genai
 from google.genai import errors as genai_errors
 
 ROOT = Path(__file__).resolve().parent.parent
-SENT_FILE = ROOT / "data" / "sent_pmids.json"
+PAPERS_FILE = ROOT / "data" / "papers.json"
+SITE_URL = os.environ.get("SITE_URL", "")
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 LINE_PUSH_URL = "https://api.line.me/v2/bot/message/push"
@@ -209,23 +214,30 @@ def summarize(paper: dict, client: genai.Client) -> str:
     raise RuntimeError(f"Geminiでの要約に失敗しました: {last_error}")
 
 
-def format_message(topic: dict, paper: dict, summary: str, today: str) -> str:
-    authors = ", ".join(paper["authors"][:3])
-    if len(paper["authors"]) > 3:
+def topic_by_key(key: str) -> dict:
+    return next(t for t in TOPICS if t["key"] == key)
+
+
+def format_message(entry: dict) -> str:
+    topic = topic_by_key(entry["topic"])
+    authors = ", ".join(entry["authors"][:3])
+    if len(entry["authors"]) > 3:
         authors += " et al."
     lines = [
-        f"{topic['emoji']} 今日の{topic['label']}論文 ({today})",
+        f"{topic['emoji']} 今日の{topic['label']}論文 ({entry['sent_on']})",
         "",
-        paper["title"],
+        entry["title"],
         f"{authors}",
-        f"{paper['journal']} ({paper['year']})",
+        f"{entry['journal']} ({entry['year']})",
         "",
-        summary,
+        entry["summary"],
         "",
-        f"PubMed: {paper['url']}",
+        f"PubMed: {entry['url']}",
     ]
-    if paper["doi"]:
-        lines.append(f"DOI: https://doi.org/{paper['doi']}")
+    if entry["doi"]:
+        lines.append(f"DOI: https://doi.org/{entry['doi']}")
+    if SITE_URL:
+        lines.append(f"サイトで見る: {SITE_URL.rstrip('/')}/papers/{entry['pmid']}.html")
     text = "\n".join(lines)
     return text[:4900]  # LINEのテキストメッセージ上限は5000文字
 
@@ -243,57 +255,116 @@ def send_line(messages: list[str]) -> None:
         raise RuntimeError(f"LINE送信に失敗しました: {resp.status_code} {resp.text}")
 
 
-def load_sent() -> dict:
-    if SENT_FILE.exists():
-        return json.loads(SENT_FILE.read_text(encoding="utf-8"))
-    return {"sent": []}
+def load_papers() -> list[dict]:
+    if PAPERS_FILE.exists():
+        return json.loads(PAPERS_FILE.read_text(encoding="utf-8"))["papers"]
+    return []
 
 
-def save_sent(data: dict) -> None:
-    SENT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    SENT_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+def save_papers(papers: list[dict]) -> None:
+    PAPERS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    PAPERS_FILE.write_text(
+        json.dumps({"papers": papers}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
 
-def main() -> int:
+def make_entry(paper: dict, topic_key: str, summary: str, sent_on: str) -> dict:
+    # 抄録の原文は著作権の都合で保存・公開しない
+    return {
+        "pmid": paper["pmid"],
+        "topic": topic_key,
+        "sent_on": sent_on,
+        "title": paper["title"],
+        "authors": paper["authors"],
+        "journal": paper["journal"],
+        "year": paper["year"],
+        "doi": paper["doi"],
+        "url": paper["url"],
+        "summary": summary,
+        "notified": False,
+    }
+
+
+def backfill(papers: list[dict], client: genai.Client) -> None:
+    """要約が保存されていない論文(サイト公開前に送ったもの)の要約を作り直す。"""
+    missing = [e for e in papers if not e.get("summary")]
+    if not missing:
+        return
+    fetched = {p["pmid"]: p for p in fetch_articles([e["pmid"] for e in missing])}
+    for entry in missing:
+        paper = fetched.get(entry["pmid"])
+        if paper is None:
+            print(f"PMID {entry['pmid']} をPubMedから取得できませんでした", file=sys.stderr)
+            continue
+        new = make_entry(paper, entry["topic"], summarize(paper, client), entry["sent_on"])
+        new["notified"] = entry.get("notified", True)
+        entry.update(new)
+        print(f"要約を作り直しました: {entry['pmid']}")
+
+
+def today_jst() -> str:
+    return datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
+
+
+def prepare() -> int:
     dry_run = os.environ.get("DRY_RUN") == "1"
-    sent = load_sent()
-    exclude = {entry["pmid"] for entry in sent["sent"]}
-    today = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d")
-    # 予備の定時実行では、その日の分がすでに送信済みなら何もしない
-    if os.environ.get("SKIP_IF_SENT_TODAY") == "1" and any(
-        entry.get("sent_on") == today for entry in sent["sent"]
-    ):
-        print(f"{today} の論文は送信済みのため終了します")
-        return 0
+    papers = load_papers()
+    today = today_jst()
     client = genai.Client()  # 環境変数 GEMINI_API_KEY を使用
 
-    messages, new_entries = [], []
+    backfill(papers, client)
+    if os.environ.get("BACKFILL_ONLY") == "1":
+        save_papers(papers)
+        return 0
+    # 予備の定時実行では、その日の分がすでに送信済みなら何もしない
+    if os.environ.get("SKIP_IF_SENT_TODAY") == "1" and any(
+        e["sent_on"] == today and e.get("notified") for e in papers
+    ):
+        print(f"{today} の論文は送信済みのため終了します")
+        save_papers(papers)
+        return 0
+
+    exclude = {e["pmid"] for e in papers}
+    new_entries = []
     for topic in TOPICS:
         paper = pick_paper(topic, exclude)
         if paper is None:
             print(f"[{topic['key']}] 未送信の論文が見つかりませんでした", file=sys.stderr)
             continue
         exclude.add(paper["pmid"])  # 角膜・硝子体の両方に該当する論文の二重送信を防ぐ
-        summary = summarize(paper, client)
-        messages.append(format_message(topic, paper, summary, today))
-        new_entries.append(
-            {"pmid": paper["pmid"], "topic": topic["key"], "title": paper["title"], "sent_on": today}
-        )
+        new_entries.append(make_entry(paper, topic["key"], summarize(paper, client), today))
 
-    if not messages:
-        print("送信する論文がありません", file=sys.stderr)
+    if not new_entries:
+        print("新しい論文がありません", file=sys.stderr)
         return 1
-
     if dry_run:
-        print("\n\n==========\n\n".join(messages))
+        print("\n\n==========\n\n".join(format_message(e) for e in new_entries))
         return 0
 
-    send_line(messages)
-    sent["sent"].extend(new_entries)
-    save_sent(sent)
-    print(f"{len(messages)}件送信しました: {[e['pmid'] for e in new_entries]}")
+    papers.extend(new_entries)
+    save_papers(papers)
+    print(f"{len(new_entries)}件を追加しました: {[e['pmid'] for e in new_entries]}")
+    return 0
+
+
+def send() -> int:
+    papers = load_papers()
+    pending = [e for e in papers if not e.get("notified")]
+    if not pending:
+        print("LINEに送る論文はありません")
+        return 0
+    send_line([format_message(e) for e in pending])
+    for entry in pending:
+        entry["notified"] = True
+    save_papers(papers)
+    print(f"{len(pending)}件送信しました: {[e['pmid'] for e in pending]}")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    command = sys.argv[1] if len(sys.argv) > 1 else ""
+    if command == "prepare":
+        sys.exit(prepare())
+    if command == "send":
+        sys.exit(send())
+    sys.exit("使い方: python daily_papers.py [prepare|send]")
