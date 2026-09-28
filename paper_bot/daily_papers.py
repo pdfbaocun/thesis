@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -185,13 +186,51 @@ def fetch_articles(pmids: list[str]) -> list[dict]:
     return [by_pmid[p] for p in pmids if p in by_pmid]
 
 
-def pick_paper(topic: dict, exclude: set[str]) -> dict | None:
+def normalize_title(title: str) -> str:
+    return "".join(ch for ch in title.lower() if ch.isalnum())
+
+
+class SeenPapers:
+    """過去に要約した論文。PMIDだけでなくDOI・タイトルでも照合し、同じ論文を二度と選ばない。"""
+
+    def __init__(self, papers: list[dict]):
+        self.pmids: set[str] = set()
+        self.dois: set[str] = set()
+        self.titles: set[str] = set()
+        for entry in papers:
+            self.add(entry)
+
+    def add(self, paper: dict) -> None:
+        self.pmids.add(paper["pmid"])
+        if paper.get("doi"):
+            self.dois.add(paper["doi"].lower())
+        if paper.get("title"):
+            self.titles.add(normalize_title(paper["title"]))
+
+    def contains(self, paper: dict) -> bool:
+        return (
+            paper["pmid"] in self.pmids
+            or bool(paper.get("doi")) and paper["doi"].lower() in self.dois
+            or bool(paper.get("title")) and normalize_title(paper["title"]) in self.titles
+        )
+
+
+def pick_paper(topic: dict, seen: SeenPapers) -> dict | None:
     for days in SEARCH_WINDOWS_DAYS:
-        candidates = [p for p in search_pmids(topic["query"], days) if p not in exclude]
+        candidates = [p for p in search_pmids(topic["query"], days) if p not in seen.pmids]
         for paper in fetch_articles(candidates[:20]):
-            if paper["abstract"] and paper["title"]:
+            if paper["abstract"] and paper["title"] and not seen.contains(paper):
                 return paper
     return None
+
+
+def assert_no_duplicates(papers: list[dict]) -> None:
+    """最後の安全装置: 記録の中に同じ論文が2回あれば、送信も保存もせずに止める。"""
+    seen = SeenPapers([])
+    for entry in papers:
+        if seen.contains(entry):
+            raise RuntimeError(f"同じ論文が重複しています(PMID {entry['pmid']})。送信を中止しました")
+        seen.add(entry)
 
 
 SUMMARY_PROMPT = """あなたは眼科領域に詳しい医学論文の解説者です。
@@ -356,7 +395,7 @@ def prepare() -> int:
         save_papers(papers)
         return 0
 
-    exclude = {e["pmid"] for e in papers}
+    seen = SeenPapers(papers)  # 非表示にした論文も含め、過去に要約したものはすべて除外
     # 手動実行で分野を絞るとき用(例: ONLY_TOPICS=retina)。空ならすべての分野
     only = {t.strip() for t in os.environ.get("ONLY_TOPICS", "").split(",") if t.strip()}
     unknown = only - {t["key"] for t in TOPICS}
@@ -366,11 +405,11 @@ def prepare() -> int:
     for topic in TOPICS:
         if (only and topic["key"] not in only) or topic["key"] in done_today:
             continue
-        paper = pick_paper(topic, exclude)
+        paper = pick_paper(topic, seen)
         if paper is None:
             print(f"[{topic['key']}] 未送信の論文が見つかりませんでした", file=sys.stderr)
             continue
-        exclude.add(paper["pmid"])  # 複数の分野に該当する論文(硝子体と網膜など)の二重送信を防ぐ
+        seen.add(paper)  # 複数の分野に該当する論文(硝子体と網膜など)の二重送信を防ぐ
         entry = make_entry(paper, topic["key"], summarize(paper, client), today)
         entry["scheduled"] = scheduled
         new_entries.append(entry)
@@ -383,22 +422,54 @@ def prepare() -> int:
         return 0
 
     papers.extend(new_entries)
+    assert_no_duplicates(papers)
     save_papers(papers)
     print(f"{len(new_entries)}件を追加しました: {[e['pmid'] for e in new_entries]}")
     return 0
 
 
+def commit_record(message: str) -> None:
+    """data/papers.json をコミットしてpushする(GitHub Actions上のみ)。失敗したら例外。"""
+    if os.environ.get("RECORD_WITH_GIT") != "1":
+        return
+    git = ["git", "-C", str(ROOT)]
+    subprocess.run(git + ["add", str(PAPERS_FILE)], check=True)
+    if subprocess.run(git + ["diff", "--cached", "--quiet"]).returncode == 0:
+        return
+    subprocess.run(git + ["commit", "-m", message], check=True)
+    for attempt in range(4):
+        if subprocess.run(git + ["push"]).returncode == 0:
+            return
+        # 他のpushと競合した場合は取り込んでから再試行
+        subprocess.run(git + ["pull", "--rebase"], check=False)
+        time.sleep(2 ** (attempt + 1))
+    raise RuntimeError("送信記録の保存(git push)に失敗しました")
+
+
 def send() -> int:
+    """重複送信を防ぐため、先に「送信済み」として記録を保存してからLINEに送る。"""
     papers = load_papers()
+    assert_no_duplicates(papers)
     pending = [e for e in papers if not e.get("notified")]
     if not pending:
         print("LINEに送る論文はありません")
         return 0
-    send_line([format_message(e) for e in pending])
+    pmids = [e["pmid"] for e in pending]
     for entry in pending:
         entry["notified"] = True
     save_papers(papers)
-    print(f"{len(pending)}件送信しました: {[e['pmid'] for e in pending]}")
+    # ここで保存に失敗したらLINEには送らない(送ったのに記録が残らず、翌日また選ばれるのを防ぐ)
+    commit_record(f"Record papers sent on {today_jst()}: {', '.join(pmids)}")
+    try:
+        send_line([format_message(e) for e in pending])
+    except Exception:
+        # LINEに届かなかったので記録を取り消し、予備実行で送り直せるようにする
+        for entry in pending:
+            entry["notified"] = False
+        save_papers(papers)
+        commit_record(f"Revert unsent papers: {', '.join(pmids)}")
+        raise
+    print(f"{len(pending)}件送信しました: {pmids}")
     return 0
 
 

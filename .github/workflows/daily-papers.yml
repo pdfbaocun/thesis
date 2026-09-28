@@ -88,14 +88,14 @@ jobs:
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-        run: python paper_bot/daily_papers.py send
-
-      - name: Record papers
-        if: ${{ github.event_name != 'push' && !inputs.dry_run }}
+          RECORD_WITH_GIT: "1"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python paper_bot/daily_papers.py send
+          # 要約の作り直しなど、送信以外の変更も保存する
           git add data/papers.json
           git diff --cached --quiet && exit 0
-          git commit -m "Record papers on $(TZ=Asia/Tokyo date +%F)"
-          git push
+          git commit -m "Update papers on $(TZ=Asia/Tokyo date +%F)"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase; sleep $((i * 2)); done
+          exit 1
