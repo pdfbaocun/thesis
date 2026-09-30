@@ -291,6 +291,69 @@
       "summary": "【タイトル和訳】\n特発性黄斑前膜手術後の灌流密度変化は主に黄斑部血管網の局所的再分布を反映している\n\n【背景・目的】\n特発性黄斑前膜（iERM）における光干渉断層血管撮影（OCTA）の血流パラメータの変化と、その臨床的特徴を評価すること。\n\n【方法】\niERM手術後に6か月以上経過観察された片眼性iERM患者37例を後方視的に検討した。全眼で波長掃引型OCTAの6×6mmスキャンを実施し、最良矯正視力（BCVA）、中心窩無血管領域（FAZ）面積、1mmおよび3mm円内の灌流密度（PD1、PD3）、中心窩と血管弓の距離（FV）を評価した。\n\n【主な結果】\n浅層毛細血管叢（SCP）と深層毛細血管叢（DCP）の双方でFAZ面積は増大し、PD1は減少した（全項目でP<0.05）。SCPにおいてFAZ面積はPD1と負の相関を示した。FVの変化とPD1の変化にはSCP（r=0.364、P=0.044）およびDCP（r=0.412、P=0.021）で有意な関連が認められたが、PD3の変化とFVの変化に相関はなかった。BCVAの変化はFAZ面積（r=-0.514、P<0.05）、PD1（r=0.325、P<0.05）、PD3（r=0.424、P<0.05）の変化と有意に相関した。\n\n【結論・臨床的意義】\niERM術後は中心部PDが低下するものの、FAZ拡大が大きいほど良好な視力改善と相関していた。FVとPDの変化の関連から、術後OCTAパラメータの変化は真の灌流低下というより、牽引解除等による血管網の局所的再分布を主に反映していることが示唆される。\n\n【ひとこと】\n術後のOCTAにおける中心部灌流密度の低下を真の虚血と誤認せず、血管の位置的再分布として解釈する視点を提供する臨床上有用な報告です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42809011",
+      "topic": "cornea",
+      "sent_on": "2026-10-01",
+      "title": "Inter-eye comparison of corneal stiffness parameters in primary open-angle glaucoma patients with unilateral damage.",
+      "authors": [
+        "Sun Y",
+        "Pang R",
+        "Cao K",
+        "Wang N",
+        "Li J"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07523-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42809011/",
+      "summary": "【タイトル和訳】\n片眼性障害を有する原発開放隅角緑内障患者における角膜スティフネスパラメータの左右眼比較\n\n【背景・目的】\n片眼性障害を伴う原発開放隅角緑内障（POAG）患者を対象に、Corvis STで評価した角膜生体力学的特性の左右眼差を検証すること。\n\n【方法】\n未治療POAG患者120名240眼（正常眼圧緑内障［NTG］60名、高眼圧緑内障［HTG］60名）の前向き横断研究。緑内障眼と対側眼をペアとして各パラメータを比較し、緑内障の有無との関連を一般化推定方程式（GEE）モデルで解析した。\n\n【主な結果】\nPOAG眼は対側眼に比べ、生体力学的補正眼圧（bIOP）高値（p=0.007）、等価球面度数の近視化（p=0.018）、眼軸長延長（p=0.006）、中心角膜厚（CCT）菲薄化（p=0.007）を認めた。サブグループでは、NTG眼でCCT菲薄化（p=0.015）および第1圧平時スティフネスパラメータ（SP-A1）低下（p=0.013）を、HTG眼でbIOP高値（p=0.002）、近視化（p=0.047）、眼軸長延長（p=0.009）を認めた。多変量GEE解析では、高bIOPがPOAG（オッズ比1.111、p=0.009）およびHTG（オッズ比1.225、p=0.002）と有意に関連し、NTGではSP-A1低下のみが有意に関連した（オッズ比0.985、p=0.035）。\n\n【結論・臨床的意義】\nHTGではbIOP上昇が障害と相関する一方、NTGでは角膜スティフネス低下が関連していた。眼圧が正常域であっても角膜が変形しやすい眼は緑内障障害に脆弱である可能性が示唆される。\n\n【ひとこと】\n片眼発症例の両眼比較により全身的因子の影響を排し、NTGにおける角膜生体力学特性の関与を浮き彫りにした点で有益な知見です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42765869",
+      "topic": "vitreous",
+      "sent_on": "2026-10-01",
+      "title": "Endophthalmitis Following Pars Plana Vitrectomy: An IRIS® Registry Study.",
+      "authors": [
+        "Hassoun MR",
+        "Wang KY",
+        "Kim BM",
+        "Blumenfeld S",
+        "Lum F",
+        "Starr MR"
+      ],
+      "journal": "Retina (Philadelphia, Pa.)",
+      "year": "2026",
+      "doi": "10.1097/IAE.0000000000005015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42765869/",
+      "summary": "【タイトル和訳】\n硝子体手術後の眼内炎：IRISレジストリ研究\n\n【背景・目的】\n米国眼科学会のIRISレジストリデータを用い、毛様体扁平部硝子体手術（PPV）後に発症した眼内炎の臨床的特徴、治療戦略、および予後を明らかにすること。\n\n【方法】\n2013年から2022年にPPV後眼内炎を発症した眼を対象とした後ろ向きコホート研究である。眼内炎診断後の視力、眼圧、眼球内容除去術および眼球摘出術の割合、裂孔原性網膜剥離の発生率の差異を解析した。\n\n【主な結果】\n期間中にPPVが施行された1,223,777眼のうち、1,275眼が基準を満たした。PPVから眼内炎診断までの期間中央値は10日であった。大多数の眼（80.9%）は再PPVを行わず、抗菌薬硝子体内注射のみで管理された。長期視力、眼圧、C/D比、眼球内容除去・摘出率は治療群間で有意差を認めなかった。一方、初回のPPVが網膜剥離に対するものであった眼では、長期視力が不良であり、眼内炎後の網膜剥離発生率が高かった。コホート全体の16.1%が眼球内容除去または眼球摘出を必要とした。\n\n【結論・臨床的意義】\nPPV後眼内炎は稀であるものの重篤な機能障害や眼球喪失をもたらす。治療法として抗菌薬硝子体内注射単独と再PPVの間で予後に有意な差はみられなかった。\n\n【ひとこと】\n120万眼以上のビッグデータからPPV後眼内炎の約16%が眼球喪失に至るという深刻な実態と、治療選択による予後の差が乏しい点を示した貴重な報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42814127",
+      "topic": "retina",
+      "sent_on": "2026-10-01",
+      "title": "Eighteen-month real-world outcomes of intravitreal aflibercept 8 mg in treatment-naïve neovascular age-related macular degeneration: a UK single-centre experience.",
+      "authors": [
+        "Scrivens B",
+        "Daniele P",
+        "Papazacharia A",
+        "Donia A",
+        "Bailey C",
+        "Maghsoudlou P",
+        "Salvatore S"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07513-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42814127/",
+      "summary": "【タイトル和訳】\n未治療の新生血管加齢黄斑変性に対するアフリベルセプト8 mg硝子体内投与の18か月リアルワールドアウトカム：英国単一施設での経験\n\n【背景・目的】\nアフリベルセプト8 mgは、新生血管加齢黄斑変性（nAMD）における投与間隔の延長と注射負担の軽減を目的として開発された。本研究では、日常診療における18か月間の視力、解剖学的指標、投与持続性の転帰を評価した。\n\n【方法】\n英国の三次医療施設でアフリベルセプト8 mgの投与を開始した未治療nAMD患者95名102眼を対象とした後方視的観察研究。全眼に3回の導入投与後、Treat-and-Extendプロトコルを実施した。ベースライン、導入後、12か月、18か月時点で最高記録視力（BRVA）、中心領域網膜厚（CST）、網膜内液、網膜下液、黄斑部出血を評価した。\n\n【主な結果】\n平均年齢は81.1±6.5歳、女性が68.4%であった。平均BRVAはベースラインの62.5±12.4文字から、導入後67.5±13.7文字、12か月時点で66.8±15.3文字（102眼）、18か月時点で65.5±18.5文字（73眼）であった。平均CSTはベースラインの317.1±95.4 μmから、導入後237.9±45.2 μm、12か月時点で236.3±51.7 μm、18か月時点で220.6±32.2 μmへと減少した。投与間隔が12週以上となった割合は12か月時点で51.9%、18か月時点で73.9%に増加した。眼内炎の発生は認められなかった。\n\n【結論・臨床的意義】\nアフリベルセプト8 mgは、実臨床の未治療nAMDにおいて18か月にわたり視力の維持、有意な解剖学的改善、投与間隔の段階的な延長を達成し、疾患活動性を制御しながら治療負担を軽減できることが示された。\n\n【ひとこと】\n実臨床においてアフリベルセプト8 mgのTreat-and-Extend法により18か月時点で7割以上の症例が12週以上の投与間隔を達成できたことを示す有用な報告です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
