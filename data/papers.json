@@ -422,6 +422,70 @@
       "summary": "【タイトル和訳】\n脈絡膜上腔出血と網膜剥離が併発した眼の治療成績：多施設共同研究\n\n【背景・目的】\n脈絡膜上腔出血と網膜剥離が併発した眼（SCH-RD）の臨床的特徴および予後を明らかにすること。\n\n【方法】\n2施設で2013年1月1日から2022年12月31日の間にSCH-RDと診断された眼を対象とした後方視的研究。主要評価項目は受診後6か月時点における視力（VA）の変化とした。\n\n【主な結果】\n44名44眼（平均年齢64.5歳、女性40.9%）が対象となった。網膜剥離の内訳は裂孔原性31眼（70.5%）、滲出性11眼（25.0%）、牽引性2眼（4.5%）で、増殖硝子体網膜症（PVR）を22眼（50.0%）に認めた。初診時平均VAは2.50 logMARであった。31眼（70.5%）において診断から中央値13.0日で復位手術が試みられ、初回手術のみで6か月後に復位を維持できたのは11眼（35.5%）であった。6か月時点で平均VAは0.26 logMAR改善し、19眼（43.2%）で3ライン以上の改善、4眼（9.1%）で20/200以上の視力を達成した。多変量解析では、より大きな視力改善は初診時視力不良およびPVR非合併と関連していた。最終的に27眼（61.4%）で網膜復位が得られ、復位オッズの上昇には複数回の手術施行およびPVR非合併が関連していた。\n\n【結論・臨床的意義】\nSCH-RD眼の視力予後は厳重な警戒を要し、特にPVR合併例で不良である。解剖学的復位の獲得にはPVR非合併に加え、複数回の手術介入が寄与する。\n\n【ひとこと】\n難治病態であるSCH-RDにおいて、PVRの合併が機能的・解剖学的予後を大きく左右することや、復位達成には複数回の手術が必要となり得る現実を示す実臨床に有用な報告です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42823523",
+      "topic": "cornea",
+      "sent_on": "2026-10-03",
+      "title": "Multidrug antifungal resistance and clinical outcomes in fungal keratitis: a prospective study in a South Indian population.",
+      "authors": [
+        "Fingerhut L",
+        "Vigneshwar R",
+        "Burté F",
+        "Devi MV",
+        "Nagarajan RS",
+        "Karpagam R",
+        "Prajna V",
+        "Mills B",
+        "Lalitha P"
+      ],
+      "journal": "Eye (London, England)",
+      "year": "2026",
+      "doi": "10.1038/s41433-026-04938-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42823523/",
+      "summary": "【タイトル和訳】\n真菌性角膜炎における多剤抗真菌薬耐性と臨床転帰：南インド集団における前向き研究\n\n【背景・目的】\n南インドの真菌性角膜炎患者から分離された真菌における抗真菌薬耐性（多剤耐性を含む）の頻度を明らかにすることを主要目的とし、耐性と臨床転帰との関連を解明することを副次目的とした。\n\n【方法】\n培養陽性の真菌性角膜炎患者153例を前向きに登録した。分離株についてナタマイシン、アムホテリシンB、ボリコナゾール、エコナゾールの最小発育阻止濃度（MIC、n=151-153）を評価し、菌の耐性と患者の臨床転帰との関連（n=91）を統計学的に解析した。\n\n【主な結果】\n4剤すべてで高レベルの耐性が認められ、Fusarium属およびAspergillus属で他属より有意に高かった（P<0.0001）。Fusarium属（n=81）の耐性率は、ナタマイシン38.3%、アムホテリシンB 93.8%、ボリコナゾール97.5%、エコナゾール76.5%であった。Aspergillus属（n=33）ではナタマイシン66.7%、アムホテリシンB 87.9%、ボリコナゾール6.1%、エコナゾール0%であった。全体として、ナタマイシン耐性は臨床転帰の悪化と有意に相関した（P=0.0034、相対リスク1.7、95%信頼区間: 1.2-2.6）。\n\n【結論・臨床的意義】\n大半の株が多剤耐性を示し、Fusarium属の28%が全4剤に耐性で、4剤すべてに感受性を示す株は存在しなかった。アゾール系に感受性があっても、ナタマイシン耐性は特にAspergillusにおいて転帰を悪化させる可能性があり、菌種特異的なMIC基準値の設定が必要である。\n\n【ひとこと】\nFusarium属などの高率な多剤耐性と、ナタマイシン耐性が予後不良因子となる実態を示した臨床上極めて重要な報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42823106",
+      "topic": "vitreous",
+      "sent_on": "2026-10-03",
+      "title": "Subretinal Sodium Fluorescein Injection and Three-Dimensional Pars Plana Vitrectomy for the Identification of Retinal Breaks.",
+      "authors": [
+        "López-Sánchez E",
+        "Remolí-Sargues L",
+        "López-Salvador B",
+        "Marín-Payá E",
+        "López-Francés E",
+        "Francés-Muñoz E"
+      ],
+      "journal": "Ophthalmic surgery, lasers & imaging retina",
+      "year": "2026",
+      "doi": "10.3928/23258160-20260818-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42823106/",
+      "summary": "【タイトル和訳】\n網膜裂孔同定のための網膜下フルオレセインナトリウム注入と三次元硝子体茎切除術\n\n【背景・目的】\n網膜剥離（RD）手術において網膜裂孔を同定するため、三次元（3D）可視化システムに統合された励起光学フィルターを利用した、新規のフルオレセインナトリウム（SF）流出手技について報告すること。\n\n【方法】\nRD患者2例に対し、NGENUITY 3Dシステムを用いた硝子体手術を実施した。裂孔が同定できない場合、経強膜または経網膜アプローチにて最大0.1 mLのSF（0.1 mg/mL）を網膜下腔に注入した。励起光学フィルターと特定のデジタルカラーチャンネルを用い、パーフルオロカーボン注入時の色素流出を可視化して網膜裂孔を同定した。\n\n【主な結果】\n2例ともに、本手技によりそれまで未同定であった網膜裂孔が描出され、標準的なRD修復術を完遂することができた。術後3か月の時点で2例とも網膜復位が得られ、SFに関連した合併症は認められなかった。\n\n【結論・臨床的意義】\nこの新規手技は網膜裂孔の検出を容易にした。ただし、長期的な安全性および有効性を確認するためには、さらなる研究が必要である。\n\n【ひとこと】\n裂孔不明の網膜剥離に対する3Dシステムと網膜下SFを併用した実用的なアプローチですが、2例の報告であり長期予後の確認が必要な点に注意して読む価値があります。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42825800",
+      "topic": "retina",
+      "sent_on": "2026-10-03",
+      "title": "A four-year retrospective surgical case series examining postoperative complications following Removal of Silicone Oil (ROSO) scored using the Complications of Retinal Detachment Surgery (CORDS) severity classification tool.",
+      "authors": [
+        "Scantling-Birch Y",
+        "Relwani S",
+        "McKechnie C",
+        "Zambarakji H"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07463-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42825800/",
+      "summary": "【タイトル和訳】\n網膜剥離手術合併症（CORDS）重症度分類ツールを用いて評価したシリコーンオイル抜去術（ROSO）後の術後合併症に関する4年間の後ろ向き症例シリーズ\n\n【背景・目的】\n複雑網膜剥離に対するシリコーンオイル（SO）タンポナーデおよびSO抜去術（ROSO）には術後合併症が伴う。本研究の目的は、CORDS重症度分類を用いてROSO後の合併症を分類・重症度評価し、概念実証となる統一的合併症スコアを提案することである。\n\n【方法】\n2018年から2022年に単一施設でROSOを施行された46眼を対象とした後ろ向き症例シリーズである。12か月間の追跡データを収集し、電子カルテから視力、眼圧、合併症を記録した。合併症はCORDS重症度分類でスコア化し、修正総合合併症スコア（MGCS）を算出した。\n\n【主な結果】\n平均SOタンポナーデ期間は8.2か月であった。12か月間で重複を除いた88件のCORDS項目が記録された。重篤な合併症として、SOの前方移動（12.5%）、網膜再剥離（5.68%）、治療を要する眼圧上昇（14.8%）、重度の視力低下（18.9%）、角膜代償不全（5.68%）、眼球癆（2.27%）が認められた。平均合併症スコアに対する時期の影響は有意であり（P=0.011）、特に術後3か月と6か月の間で最も変化が大きかった（P=0.002）。MGCSは9.66%であった。\n\n【結論・臨床的意義】\nROSO後の術後合併症は高頻度であり、続発緑内障、角膜代償不全、眼球癆などの重症合併症は術後3〜6か月に出現しやすい。本研究で提案したMGCSは今後の研究間比較の指標となり得るが、大規模な前向きコホートでの検証が必要である。\n\n【ひとこと】\nROSO後3〜6か月に重篤な合併症が増加することを示し、標準化スコアを用いた客観的評価の枠組みを提示している点で有用な論文です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
