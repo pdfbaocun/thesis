@@ -1088,6 +1088,73 @@
       "summary": "【タイトル和訳】\nアジア太平洋眼科教授アカデミー（AAPPO）、アジア太平洋硝子体網膜学会（APVRS）、および国際網膜アカデミア（ARI）による網膜静脈閉塞症（RVO）の病因、診断、および治療に関する国際コンセンサスとガイドライン\n\n【背景・目的】\n網膜静脈閉塞症（RVO）は、黄斑浮腫や網膜虚血などを引き起こし視機能に重大な脅威をもたらす疾患である。近年の疫学データ、高度な画像技術の進化、抗VEGF薬やドラッグデリバリーシステムなどの新規治療、人工知能（AI）に関する最新知見を踏まえ、RVOの病因、診断、管理に関する包括的な最新ガイドラインの策定を目的とした。\n\n【方法】\n最新のエビデンスに基づく体系的レビューと議論を行い、国際専門家パネル（IPE）の投票によりコンセンサス声明を策定した。主な検討領域は、分類法や画像診断に関する論点、抗VEGF薬・ステロイド・レーザー・手術に関する治療の論点、臨床試験の標準プロトコルと個別化アプローチの管理パラダイム、新規治療における論点の4点である。\n\n【主な結果】\n抄録内に具体的な数値データの記載はないが、上記の重要領域について専門家投票に基づくコンセンサス声明がまとめられた。\n\n【結論・臨床的意義】\nアジア太平洋地域の現代の実臨床に即し、治療の安全性と有効性を最適化するための、標準化されつつも個別化されたRVO管理プロトコルが眼科医向けに提示された。\n\n【ひとこと】\n最新の画像診断技術や新規薬剤、AIの知見を反映したアジア太平洋地域の実臨床に即した治療指針を網羅的に把握できる論文です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42850329",
+      "topic": "cornea",
+      "sent_on": "2026-10-12",
+      "title": "Predictors of long-term graft survival after descemet membrane endothelial keratoplasty.",
+      "authors": [
+        "Barequet D",
+        "Abdi M",
+        "Kee AR",
+        "Huertas-Bello M",
+        "Kapelushnik N",
+        "Abohaimed S",
+        "Chan CC",
+        "Rootman DS"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07541-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42850329/",
+      "summary": "【タイトル和訳】\nデスメ膜内皮移植術（DMEK）後の長期グラフト生着における予測因子\n\n【背景・目的】\nDMEK後の長期グラフト生着に寄与する予測因子を、レシピエント、ドナー、および術後早期のグラフト特性に着目して同定すること。\n\n【方法】\n5年以上（平均8.0±2.2年）追跡されたDMEK施行眼356眼（246名）を対象とした後ろ向きコホート研究。Kaplan-Meier解析および多変量Cox比例ハザードモデルを用いて、各種因子とグラフト生着の関連を評価した。\n\n【主な結果】\n観察期間中に99眼（27.8%）で機能不全が発生した。不全率は適応疾患により異なり、FEDで7.4%、BKで54.0%、PKP後で57.6%、DSAEK後で46.4%、再DMEKで66.7%であった。多変量解析ではFEDと比較し、BK（HR 2.69, p=0.014）、PKP後（HR 4.78, p<0.001）、DSAEK後（HR 3.12, p=0.013）、再DMEK（HR 4.40, p=0.003）で有意にリスクが高かった。緑内障インプラント手術歴も独立した危険因子であった（HR 2.44, p=0.041）。ドナー特性や術後早期の剥離、リバブリング、6か月時の内皮細胞密度は多変量モデルで独立した予後予測因子とはならなかったが、Kaplan-Meier解析では6か月時の低内皮細胞密度および大きな内皮減少率が生着低下と関連した。\n\n【結論・臨床的意義】\nDMEKの長期生着はドナー特性ではなく、レシピエントの病態や併存症に主として規定されるため、術前のリスク層別化と術後早期の内皮モニタリングが重要である。\n\n【ひとこと】\nDMEKの長期予後を左右するのはドナー側ではなく適応疾患や緑内障手術歴といったレシピエント側の要因であることを示した、実臨床で有用な報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42480827",
+      "topic": "vitreous",
+      "sent_on": "2026-10-12",
+      "title": "Demographic Disparities in the Likelihood of Surgical Repair Following Diagnosis of Rhegmatogenous Retinal Detachment.",
+      "authors": [
+        "Babu A",
+        "Kim SB",
+        "Kaelber DC",
+        "Singh RP",
+        "Rachitskaya AV",
+        "Talcott KE"
+      ],
+      "journal": "American journal of ophthalmology",
+      "year": "2026",
+      "doi": "10.1016/j.ajo.2026.07.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42480827/",
+      "summary": "【タイトル和訳】\n裂孔原性網膜剥離の診断後における手術施行の可能性に関する人口統計学的格差\n\n【背景・目的】\n米国の大規模後方視的調査に基づき、人口統計学的差異が裂孔原性網膜剥離（RRD）診断後の手術介入の受けやすさに影響を与えるかを評価すること。\n\n【方法】\n電子カルテプラットフォームを用い、ICD-10でRRDと診断された患者を性別、人種、民族、社会経済的/心理社会的（SES）状態に分類した。年齢、眼所見、SES、全身・生活習慣の併存疾患で1対1の傾向スコアマッチングを行い、診断後1日、1週、1か月、3か月の各時点での手術実施リスク比（RR）を評価した。\n\n【主な結果】\nマッチング後、男性は女性と比べ1日以内（RR 1.20、95% CI 1.15-1.24）から3か月以内（RR 1.19、95% CI 1.15-1.23）で手術を受ける可能性が有意に高かった。白人は黒人と比較して1日以内（RR 1.47）から3か月以内（RR 1.36）で有意に高かった。アジア人対白人、ヒスパニック対非ヒスパニックでは有意差はなかった。SES問題がない群は、ある群に比べ1日以内（RR 3.35）から3か月以内（RR 2.83）で有意に高かった。\n\n【結論・臨床的意義】\n男性、白人、およびSES問題のない患者はRRD手術を早期に受けやすい一方、黒人やSES問題を抱える患者では適時の手術介入に顕著な格差が存在することが示された。\n\n【ひとこと】\n大規模EHRデータを用いてRRDの緊急手術介入における性別・人種・社会経済的格差の実態を定量的に示した点で重要な報告である。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42859197",
+      "topic": "retina",
+      "sent_on": "2026-10-12",
+      "title": "Continuous efficacy and safety of fluocinolone acetonide implant: long-term insights in diabetic macular edema patients from a portuguese hospital.",
+      "authors": [
+        "Pires DF",
+        "Ferreira A",
+        "Coelho J",
+        "Caiado F",
+        "Borges T",
+        "Correia N",
+        "Menéres MJ",
+        "Pessoa B"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07549-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42859197/",
+      "summary": "【タイトル和訳】\nフルオシノロンアセトニドインプラントの持続的な有効性と安全性：ポルトガルの病院における糖尿病黄斑浮腫患者の長期的知見\n\n【背景・目的】\n難治性糖尿病黄斑浮腫（DME）患者を対象に、0.19 mgフルオシノロンアセトニド（FAc）硝子体内インプラントの36か月にわたる有効性と安全性を評価することです。\n\n【方法】\nFAcインプラント治療を受けた難治性DME患者を対象とした単施設後ろ向き研究です。主要評価項目は36か月時点で中心網膜厚（CRT）280 μm以下を達成した眼の割合としました。\n\n【主な結果】\n62例91眼が解析されました。36か月時点で評価可能であった87眼中44眼（50.6%）でCRT 280 μm以下を達成しました（p<0.0001）。平均視力はベースラインから9.4 ETDRS文字改善し（p<0.0001）、平均黄斑容積は1.76 mm³減少しました（p<0.0001）。追加の硝子体内治療は52眼（57.1%）で必要となり、11眼（12.1%）で2回目のFAc投与が行われました。有害事象として、眼圧下降治療の開始または強化が45眼（49.5%）、高眼圧症の基準合致が33眼（36.3%）、緑内障手術の施行が8眼（8.8%）で認められました。ベースライン時の有水晶体眼23眼（25.3%）は全例で白内障手術を受けました。\n\n【結論・臨床的意義】\n0.19 mg FAcインプラントは難治性DMEに対し36か月にわたり持続的な形態的・機能的改善をもたらす一方で、長期的な眼圧モニタリングが不可欠です。\n\n【ひとこと】\n難治性DMEに対する3年間の長期有効性が示された一方、高い眼圧上昇リスクや有水晶体眼全例での白内障手術など、実臨床で留意すべき安全性プロファイルが明確に示されています。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
