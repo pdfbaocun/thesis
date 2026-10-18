@@ -1550,6 +1550,75 @@
       "summary": "【タイトル和訳】\n糖尿病黄斑浮腫に対するファリシマブ硝子体内注射の有効性および影響因子の解析\n\n【背景・目的】\n実臨床において、投与間隔調整（T&E）プロトコルに基づく糖尿病黄斑浮腫（DME）へのファリシマブ硝子体内注射の有効性と安全性を評価し、間隔延長下での視力改善および疾患コントロール持続性に関連する因子を特定すること。\n\n【方法】\n2024年1月から12月に治療を開始し12か月以上追跡できたDME患者170名（170眼）を対象とした単施設後方視的コホート研究。3回の初期負荷投与後にT&Eを実施した。主要評価項目は12か月時点の最高矯正視力（BCVA）と中心網膜厚（CST）の変化量とした。\n\n【主な結果】\n12か月時点で、平均BCVAは9.7±11.5文字改善し、平均CSTは191.0±135.0 µm減少した（共にP<0.001）。患者の50.0%が10文字以上の視力改善、64.7%がdry macula（CST<300 µm）を達成した。多変量回帰分析では、1か月時点のCST減少がBCVA改善と最も強い正の相関を示した一方（100 µm減少ごとにB=0.48、β=0.41、P<0.001）、ベースラインのHbA1c、CST、視細胞内節外節接合部（EZ）障害は負の相関を示した。さらに、ベースラインの高HbA1c、CST 500 µm以上、EZ障害は維持期の投与間隔短縮と関連していた。重篤な有害事象は発生しなかった。\n\n【結論・臨床的意義】\n実臨床のDMEに対するファリシマブT&E治療は、安全性に優れ持続的な視機能・解剖学的改善をもたらした。治療成績や間隔維持の耐久性は、全身の代謝コントロールや網膜の重症度、投与早期のCST反応に左右されるため、個別化されたモニタリングが有用である。\n\n【ひとこと】\n実臨床におけるファリシマブT&E治療の成績に加え、投与間隔の短縮リスクや視力予後を左右するベースライン因子および早期反応性が具体的に示されており、日常診療の治療戦略立案に役立ちます。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42891799",
+      "topic": "cornea",
+      "sent_on": "2026-10-19",
+      "title": "Spatial corneal endothelial cell loss after preserflo microshunt implantation: association with tube insertion position.",
+      "authors": [
+        "Otsuka M",
+        "Miyakoshi A",
+        "Nitta Y",
+        "Akai R",
+        "Tojo N",
+        "Hayashi A"
+      ],
+      "journal": "Japanese journal of ophthalmology",
+      "year": "2026",
+      "doi": "10.1007/s10384-026-01439-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42891799/",
+      "summary": "【タイトル和訳】\nPreserfloマイクロシャント留置後の空間的角膜内皮細胞減少：チューブ挿入位置との関連\n\n【背景・目的】\nPreserFlo MicroShunt（PFM）留置術後の空間的な角膜内皮細胞密度（ECD）変化を調査し、局所的な角膜内皮細胞減少に関連するチューブ関連因子を特定すること。\n\n【方法】\nPFM留置術を受け6か月以上経過観察された薬物抵抗性緑内障118名118眼を対象とした後ろ向き研究。前眼部OCTでチューブ-角膜間距離や角度、前房内チューブ長を評価し、術後1か月の隅角鏡像からチューブ挿入位置を虹彩側、線維柱帯、角膜側に分類した。角膜9領域のECDを測定し、チューブ挿入部（Position 3）における術後3および6か月時点のECD減少率を主要評価項目として線形混合効果モデルで解析した。\n\n【主な結果】\nチューブ挿入位置は虹彩側36眼、線維柱帯73眼、角膜側9眼であった。多変量線形混合効果分析の結果、虹彩側挿入と比較して線維柱帯接触挿入（β = 12.8%、P = 0.026）および角膜側挿入（β = 28.6%、P = 0.007）はいずれも有意に大きな局所的内皮細胞減少と関連していた。なお、中央部ECDの減少は軽度であった（6か月時点で2.1%）。\n\n【結論・臨床的意義】\nPFM留置後の早期局所的内皮細胞減少はチューブ挿入位置、特に角膜側への挿入と関連していた。中央部ECD測定のみでは局所的な内皮障害を過小評価する可能性がある。\n\n【ひとこと】\nPFM術後の内皮保護には角膜側へのチューブ挿入を避ける手技が重要であり、術後管理では中央部だけでなくチューブ近傍の局所的なECD評価が不可欠であることを示唆する論文です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42885992",
+      "topic": "vitreous",
+      "sent_on": "2026-10-19",
+      "title": "Individual-Eye Pharmacokinetics of Intravitreal Ranibizumab: Linking Ocular Geometry to Drug Retention Using MRI and Modeling.",
+      "authors": [
+        "Lamirande P",
+        "Gaffney EA",
+        "Gertz M",
+        "Künnecke B",
+        "Bielser T",
+        "Bruns A",
+        "Crawshaw JR",
+        "Wessels U",
+        "Rampazzo A",
+        "Maini PK",
+        "Caruso A"
+      ],
+      "journal": "Investigative ophthalmology & visual science",
+      "year": "2026",
+      "doi": "10.1167/iovs.67.12.31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42885992/",
+      "summary": "【タイトル和訳】\n硝子体内投与ラニビズマブの個眼薬物動態：MRIとモデリングを用いた眼球形態と薬物滞留性の関連付け\n\n【背景・目的】\nMRIによる眼球形態、拡散モデル、薬物動態（PK）測定を統合し、ウサギにおける硝子体内投与ラニビズマブのPKに対する眼球形態の影響を定量化することです。\n\n【方法】\nウサギ39羽でMRIを行い眼球形態を取得しました。0.5 mgの単回または3回投与後に前房水を連続採取してPKを評価しました。プロファイル尤度解析で個眼パラメータを推定し、眼球サイズと注射部位から眼内半減期を予測する平均初回通過時間モデルや、眼軸長（AL）に基づく簡易モデルを構築・検証しました。\n\n【主な結果】\n対象ウサギのALや硝子体容積の範囲はヒトより限定的でした。モデリングにより眼球サイズに伴う半減期延長が予測され、AL簡易モデルでも同様の傾向が再現されました。実測の推定半減期は2.8〜4.9日（集団平均3.67日）であり、ALおよび硝子体容積と弱い相関を示しました。\n\n【結論・臨床的意義】\n個眼レベルの硝子体内PKを解析する定量的枠組みが示されました。眼球形態が薬物消失に影響することが実験的にも検出され、より眼球サイズのばらつきが大きいヒトにおいては、個別化投与戦略を検討する上で重要な知見となります。\n\n【ひとこと】\n眼球形態と抗VEGF薬の眼内半減期の関連をモデルと実測値で示した研究であり、将来的な個別化医療の可能性を考える上で参考になります。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42891851",
+      "topic": "retina",
+      "sent_on": "2026-10-19",
+      "title": "Combined use of orbital soft tissue volume and retinal microvessel density for diagnosing dysthyroid optic neuropathy.",
+      "authors": [
+        "Zhu S",
+        "Lai B",
+        "Wu Z",
+        "Fan B",
+        "Xiao Q",
+        "Chen X",
+        "Dai Y"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07561-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42891851/",
+      "summary": "【タイトル和訳】\n甲状腺視神経症の診断における眼窩軟部組織容積と網膜微小血管密度の併用\n\n【背景・目的】\n甲状腺眼症（TAO）における眼窩軟部組織および網膜微細構造の変化と視覚障害との関連を調べ、甲状腺視神経症（DON）に対する併用診断能を検討すること。\n\n【方法】\nTAO患者の後ろ向き研究。DON群（18眼）、疑診DON群（24眼）、非DON群（20眼）と健常対照群（30眼）を対象とした。CTに基づく眼窩軟部組織の3次元容積指標と、OCT-Aによる網膜微小血管密度および厚みを評価した。\n\n【主な結果】\n深層黄斑毛細血管密度を除き、DON群は他群に比べ網膜血管密度と厚みが有意に低下していた（p<0.05）。容積指標では、DON群は眼窩脂肪指数（OFV/BOV）と外眼筋指数（EOMV/BOV）が有意に高値であった一方、筋円錐内容積指数（MCIV/BOV）は低値であった（p<0.05）。黄斑表層毛細血管密度（MSCRP-VD）、視神経乳頭部全体血管密度（ONH-wiVD）、MCIV/BOV、EOMV/BOVの組み合わせは、DON診断において最も高い診断能を示した（AUC: 0.954、感度: 95%、特異度: 88.1%）。\n\n【結論・臨床的意義】\n外眼筋指数、筋円錐内容積指数とOCT-A微小血管指標の併用はDONの最も正確な診断指針となり、早期診断精度の向上と永続的な視覚喪失の予防に寄与する。\n\n【ひとこと】\nCTによる眼窩組織の3D容積解析とOCT-A微小血管パラメータの統合がDONの客観的早期診断に有用であることを示した報告です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
