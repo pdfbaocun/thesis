@@ -2011,6 +2011,78 @@
       "summary": "【タイトル和訳】\nシンガポールの多民族高齢集団における近視性黄斑変性の有病率、関連因子、および視機能への影響：PIONEER研究\n\n【背景・目的】\nシンガポール高齢者における近視性黄斑変性（MMD）の有病率、関連因子、食事パターン、および視機能への影響を評価すること。\n\n【方法】\nPIONEER研究の地域在住60歳以上を対象に、等価球面度数（SE）、眼軸長（AL）、最良矯正視力（BCVA）、コントラスト感度（CS）、眼底撮影を実施した。食事は110項目の頻度調査票と因子分析で評価し、MMDはMETA-PM分類でグレーディングした。多変量回帰分析を用い、SEとALを個別にモデル化して関連を検討した。\n\n【主な結果】\n有水晶体眼1643名（平均70.6±7.6歳）の年齢調整MMD有病率は5.1%（95%信頼区間 4.0-6.2%）で、60-65歳の3.1%から85歳以上の13.1%へと加齢に伴い上昇した。75歳以上の強度近視者では有病率が80-100%に達した。多変量解析では、より強い近視度数（SE）、長いAL、高齢がMMDと有意に関連した（すべてp<0.001）。MMDはBCVA低下（調整後差 0.05〜0.10 logMAR）およびCS低下（調整後差 -0.10〜-0.15 logCS）と関連した（すべてp<0.05）。食事パターンとの有意な関連はみられなかった。\n\n【結論・臨床的意義】\nMMDは高齢強度近視者でほぼ不可避の合併症として視力やコントラスト感度を著しく損なう。食事との関連は認められず、高リスク群における一次予防と眼軸長などの構造的モニタリングが不可欠である。\n\n【ひとこと】\n75歳以上の強度近視者の大半にMMDが発現し視覚の質を障害する実態を示しており、若年期からの眼軸長管理と長期追跡の重要性を裏付ける報告です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42922396",
+      "topic": "cornea",
+      "sent_on": "2026-10-26",
+      "title": "Effect of Dry Eye and Ocular Surface Treatment on Agreement and Repeatability of Corneal Astigmatism Measurements Among Three Devices.",
+      "authors": [
+        "Wang S",
+        "Lin X",
+        "Shi R",
+        "Bai L",
+        "Qian D",
+        "Yang J"
+      ],
+      "journal": "Journal of cataract and refractive surgery",
+      "year": "2026",
+      "doi": "10.1097/j.jcrs.0000000000002078",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42922396/",
+      "summary": "【タイトル和訳】\n3機種間における角膜乱視測定の一致性と再現性に対するドライアイおよび眼表面治療の影響\n\n【背景・目的】\n加齢白内障患者を対象に、ドライアイ（DED）および眼表面治療が、IOLMaster 700、Pentacam、iTraceの3機種による角膜乱視測定の一致性と再現性に与える影響を評価すること。\n\n【方法】\n加齢白内障患者313眼を対象とした前向き研究。DED眼には0.3%ヒアルロン酸ナトリウム点眼を2週間行い、治療後に再検査した。散瞳前に3機種で角膜屈折乱視（KCA）、全角膜乱視（TCA）、および各ベクトル成分を測定した。機種間の一致性はBland-Altman分析で、再現性は被験者内標準偏差、再検査再現性（TRT）、級内相関係数で評価した。\n\n【主な結果】\n対照群と比較し、DEDのベースラインでは一致限界（LoA）が広くTRTも不良であった。治療後、3機種間のLoA幅はKCAで50.5%〜62.5%、TCAで19.9%〜29.0%縮小した。KCAの再現性はIOLMaster 700とiTraceで有意に改善したが、TCAの再現性改善はIOLMaster 700のみで認められた。なお、機器やパラメータによる測定値の差異は治療後も残存した。\n\n【結論・臨床的意義】\nDEDは角膜乱視測定の一致性と再現性を低下させるが、短期間の眼表面治療により測定の安定性が向上する。\n\n【ひとこと】\n術前乱視矯正の精度向上には治療介入が有用である一方、機器間差は治療後も残るため機種の互換性には注意が必要です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42922391",
+      "topic": "vitreous",
+      "sent_on": "2026-10-26",
+      "title": "Development of posterior vitreous detachment after lens surgery in myopic eyes - Results from the MYOPRED study.",
+      "authors": [
+        "Ullrich M",
+        "Ivellio-Vellin H",
+        "Ivastinovic D",
+        "Palkovits S",
+        "Fernández-Vega Sanz Á",
+        "Tassignon MJ",
+        "Poyales F",
+        "Gundersen KG",
+        "Amon M",
+        "Güell JL",
+        "Vryghem JC",
+        "Nuijts RMMA",
+        "Pilwachs C",
+        "Gleiss A",
+        "Findl O",
+        "MYOPRED study group"
+      ],
+      "journal": "Journal of cataract and refractive surgery",
+      "year": "2026",
+      "doi": "10.1097/j.jcrs.0000000000002077",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42922391/",
+      "summary": "【タイトル和訳】\n近視眼における水晶体手術後の後部硝子体剥離の発生：MYOPRED研究の結果\n\n【背景・目的】\n術前に完全後部硝子体剥離（PVD）を認めない近視眼を対象に、水晶体手術前のPVD状態および術後のPVD進行を評価すること。\n\n【方法】\n水晶体超音波乳化吸引術が予定された眼軸長25.0mm以上の眼を対象とした多施設前向き観察研究。光干渉断層計（一部施設で超音波検査を併用）を用いて術前および術後にPVD状態を評価した。全例で術後2か月、術前に完全PVDを認めない例は術後6か月、12か月、または完全PVD確認まで追跡した。\n\n【主な結果】\n600名968眼（平均年齢64.8歳）を解析した。術前のPVD状態は完全PVDが52.9%、不完全PVDが26.4%、PVDなしが8.8%、判定不能が11.9%であった。術前に完全PVDがなかった眼（327眼）において、完全PVDへの進行率は術後2か月で9.9〜12.6%、6か月で25.5%、12か月で40.2%であり、術後12か月以内に48.0%の眼でPVDの進行が認められた。完全PVD進行のハザード比は、年齢10歳上昇あたり1.37（P=0.003）、眼軸長1mm延長あたり1.25（P<0.001）であった。\n\n【結論・臨床的意義】\n術前に完全PVDがない近視眼の約4割が白内障手術後1年以内に完全PVDへと進行し、その進行には高齢および長い眼軸長が有意に関連していた。\n\n【ひとこと】\n近視眼の白内障術後早期におけるPVD進行率と、そのリスク因子が高齢および眼軸長延長であることを前向き多施設研究として明確に示した価値の高い論文です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42925339",
+      "topic": "retina",
+      "sent_on": "2026-10-26",
+      "title": "Baseline OCT-features predicting retinal atrophy in optic disc swelling.",
+      "authors": [
+        "Brenneisen JD",
+        "Desideri LF",
+        "Jaggi D",
+        "Zinkernagel MS",
+        "Heussen FM"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07577-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42925339/",
+      "summary": "【タイトル和訳】\n視神経乳頭腫脹における網膜萎縮を予測するベースラインOCT特徴\n\n【背景・目的】\n初発の視神経乳頭腫脹（ODS）において、黄斑および視神経乳頭（ONH）の体積解析を用い、初発時のOCTバイオマーカーが網膜神経線維層（RNFL）や神経節細胞層（GCL）の萎縮を予測できるかを評価すること。\n\n【方法】\n初発ODSで6か月および12か月の追跡データがある患者の後ろ向き研究。SD-OCT体積スキャンをAI解析し、ETDRSグリッドにおける黄斑RNFL、神経節細胞-内網状層（GCL+IPL）、ONH RNFLの各体積を定量・解析した。\n\n【主な結果】\n32名52眼（平均39歳：うっ血乳頭24眼、ぶどう膜炎性22眼など）を解析した。全OCTパラメータは12か月で有意に低下した。GCL+IPL減少量はぶどう膜炎性でうっ血乳頭より顕著であり（-296±241 nL vs. -110±160 nL）、6か月以降も持続したのはぶどう膜炎性のみだった（p=0.012）。ベースラインのGCL+IPL体積（β=0.91、p<0.001）および視力不良（β=-317、p=0.002）は12か月後のGCL+IPL体積減少を有意に予測したが、ONH RNFLは視覚転帰を予測しなかった。\n\n【結論・臨床的意義】\nODSにおいて、ベースラインの黄斑GCL+IPL体積は病因とほぼ無関係に12か月後の網膜萎縮を予測し、診断時のリスク層別化に有用である。\n\n【ひとこと】\n視神経乳頭浮腫の萎縮予測には、浮腫に影響されやすい乳頭部RNFLではなく、初発時の黄斑GCL+IPL体積が優れた指標となることを示した実践的な論文です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
