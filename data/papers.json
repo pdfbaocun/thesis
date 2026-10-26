@@ -2083,6 +2083,68 @@
       "summary": "【タイトル和訳】\n視神経乳頭腫脹における網膜萎縮を予測するベースラインOCT特徴\n\n【背景・目的】\n初発の視神経乳頭腫脹（ODS）において、黄斑および視神経乳頭（ONH）の体積解析を用い、初発時のOCTバイオマーカーが網膜神経線維層（RNFL）や神経節細胞層（GCL）の萎縮を予測できるかを評価すること。\n\n【方法】\n初発ODSで6か月および12か月の追跡データがある患者の後ろ向き研究。SD-OCT体積スキャンをAI解析し、ETDRSグリッドにおける黄斑RNFL、神経節細胞-内網状層（GCL+IPL）、ONH RNFLの各体積を定量・解析した。\n\n【主な結果】\n32名52眼（平均39歳：うっ血乳頭24眼、ぶどう膜炎性22眼など）を解析した。全OCTパラメータは12か月で有意に低下した。GCL+IPL減少量はぶどう膜炎性でうっ血乳頭より顕著であり（-296±241 nL vs. -110±160 nL）、6か月以降も持続したのはぶどう膜炎性のみだった（p=0.012）。ベースラインのGCL+IPL体積（β=0.91、p<0.001）および視力不良（β=-317、p=0.002）は12か月後のGCL+IPL体積減少を有意に予測したが、ONH RNFLは視覚転帰を予測しなかった。\n\n【結論・臨床的意義】\nODSにおいて、ベースラインの黄斑GCL+IPL体積は病因とほぼ無関係に12か月後の網膜萎縮を予測し、診断時のリスク層別化に有用である。\n\n【ひとこと】\n視神経乳頭浮腫の萎縮予測には、浮腫に影響されやすい乳頭部RNFLではなく、初発時の黄斑GCL+IPL体積が優れた指標となることを示した実践的な論文です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42922395",
+      "topic": "cornea",
+      "sent_on": "2026-10-27",
+      "title": "Long-Term Visual, Refractive, and Patient-Reported Satisfaction of the Tel-Aviv Protocol (ePRK-CXL) for Progressive Keratoconus.",
+      "authors": [
+        "Friehmann A",
+        "Sommer A",
+        "Sela T",
+        "Munzer G",
+        "Mimouni M",
+        "Kaiserman I"
+      ],
+      "journal": "Journal of cataract and refractive surgery",
+      "year": "2026",
+      "doi": "10.1097/j.jcrs.0000000000002076",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42922395/",
+      "summary": "【タイトル和訳】\n進行性円錐角膜に対するテルアビブ・プロトコル（ePRK-CXL）の長期的視覚・屈折成績および患者報告満足度\n\n【背景・目的】\n進行性円錐角膜患者において、角膜上皮屈折矯正角膜切除術（ePRK）と角膜クロスリンキング（CXL）を併用するテルアビブ・プロトコルの長期的な視力、屈折成績、および患者満足度を評価すること。\n\n【方法】\nePRK-CXLを施行した連続症例の後方視的単施設研究。術前および最終観察時の角膜厚、K値（Kmean、Kmin、Kmax）、等価球面度数（SEQ）、自覚的屈折、裸眼視力（UDVA）、矯正視力（CDVA）、安全性・有効性指数を記録。質問票を用いて眼鏡やコンタクトレンズへの依存度、満足度、視覚症状を評価した。\n\n【主な結果】\n38例50眼（平均25.9±6.8歳）を平均2,910±605日（約8年）追跡した。UDVAは1.04±0.70から0.36±0.37 logMAR、CDVAは0.23±0.16から0.11±0.10 logMARへ改善した（共にP < 0.001）。安全性指数は1.42±0.55、有効性指数は0.93±0.51であった。Kmaxは47.51±2.96から45.95±2.99 D、SEQは-2.42±2.29から-0.82±1.57 Dへと有意に改善した（共にP < 0.001）。角膜厚は448.65±38.95から418.93±55.77 μmに減少した。81.6%が高満足度を示し、52.6%が眼鏡非依存、92.1%がコンタクトレンズ非依存を達成した。全例で進行は認められなかった。\n\n【結論・臨床的意義】\n平均約8年の長期追跡において、テルアビブ・プロトコルは疾患の進行を抑えつつ角膜形状を安定化させ、持続的な視力・屈折改善と高い患者満足度をもたらす組織温存型の有用な選択肢である。\n\n【ひとこと】\n進行性円錐角膜に対するePRK併用CXLが、8年という長期にわたり進行抑制だけでなく良好な視機能と高い患者満足度を維持できることを示した貴重な報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42645418",
+      "topic": "vitreous",
+      "sent_on": "2026-10-27",
+      "title": "Methotrexate as an adjunct to pars plana vitrectomy for the prevention and treatment of proliferative vitreoretinopathy in rhegmatogenous retinal detachment: A clinical study.",
+      "authors": [
+        "Mohamed Elsayed Saad E",
+        "Elbadry Mohammed Mohammed H",
+        "Dabour SA",
+        "Alyan A"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07467-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42645418/",
+      "summary": "【タイトル和訳】\n裂孔原性網膜剥離における増殖硝子体網膜症の予防および治療のための硝子体茎切除術併用メトトレキサート：臨床研究\n\n【背景・目的】\n増殖硝子体網膜症（PVR）を伴う裂孔原性網膜剥離（RRD）眼に対し、硝子体茎切除術（PPV）への硝子体内メトトレキサート（MTX）併用投与がもたらす形態学的・機能的転帰の改善効果と安全性を検討すること。\n\n【方法】\nPVR Grade Cを伴うRRD患者50眼を対象とした前向き無作為化比較試験。PPV単独群（群A）とPPV＋硝子体内MTX併用群（群B：術中に200 µg/0.05 mL投与後、4週間にわたり週1回投与）に割り付けた。全眼にシリコーンオイルタンポナーデを実施した。主要評価項目は初回手術解剖学的成功（SSAS：追加手術なしのオイル抜去後の復位維持）、副次評価項目は最終解剖学的成功、視力（BCVA）、手術回数、術後合併症とした。\n\n【主な結果】\nSSASは対照群に比べMTX群で有意に高値であった（p < 0.001）。完全解剖学的成功率はMTX群で100%、対照群で76%であった（p = 0.022）。BCVA（LogMAR）の改善度もMTX群で有意に優れていた（p < 0.001）。さらにMTX群では嚢胞様黄斑浮腫（p < 0.001）や網膜前膜（p < 0.001）の発症頻度が有意に低く、術後後遺症が軽減した。低眼圧やMTXに伴う眼毒性は確認されなかった。\n\n【結論・臨床的意義】\nPVRを伴うRRDへの硝子体内MTX併用は、初回手術成功率を向上させ、再手術の必要性や術後合併症を低減し、形態的・機能的予後を有意に改善する。\n\n【ひとこと】\n難治性であるGrade C PVRに対し、術中および術後4回の硝子体内MTX投与が解剖学的成功率の改善のみならず黄斑浮腫や網膜前膜の抑制にも有効性を示した点で臨床的価値が高い報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42928376",
+      "topic": "retina",
+      "sent_on": "2026-10-27",
+      "title": "Outcomes of subthreshold diode micropulse laser and anti-VEGF vs anti-VEGF monotherapy for diabetic macular edema: a meta-analysis.",
+      "authors": [
+        "Sothivannan A",
+        "Leung V",
+        "Pandya BU",
+        "Long C",
+        "Kertes PJ",
+        "Muni RH",
+        "Popovic MM"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07564-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42928376/",
+      "summary": "【タイトル和訳】\n糖尿病黄斑浮腫に対する閾値下ダイオードマイクロパルスレーザーと抗VEGF薬併用療法 vs 抗VEGF単独療法の治療成績：メタアナリシス\n\n【背景・目的】\n糖尿病黄斑浮腫（DME）患者を対象に、閾値下ダイオードマイクロパルスレーザー（SDMLP）と抗VEGF薬の併用療法と、抗VEGF単独療法における視力および解剖学的転帰を比較すること。\n\n【方法】\n2005年1月〜2025年4月のデータベースから、両治療を比較したRCTおよび観察研究を抽出したメタアナリシス。主要評価項目は最高矯正視力（BCVA）の変化量（∆BCVA）、副次評価項目は各時点のBCVA・中心黄斑部厚（CMT）、CMT変化量（∆CMT）、12か月間の注射回数とした。9研究（RCT 5件、コホート4件）の500人535眼を対象とした。\n\n【主な結果】\n12か月時の∆BCVAは併用群でわずかに良好であったが（MD: -0.043 logMAR、約2文字改善、p=0.0497）、RCTのみの解析では有意差はなかった（p=0.055）。12か月時の絶対BCVA（MD: -0.062 logMAR、p<0.001）と絶対CMT（MD: -15.3 µm、p<0.001）は併用群が優れていたが、12か月時の∆CMTに有意差はなかった（p>0.05）。12か月間の注射回数は併用群で有意に少なかった（MD: -2.1回、p<0.001）。なお、主要評価項目のエビデンスの確実性は低度（low）であった。\n\n【結論・臨床的意義】\nDMEに対するSDMLPと抗VEGF薬の併用は、単独療法と同等かごくわずかに優れ、12か月間の注射負担を軽減できる可能性がある。ただし、視力およびCMTの差は臨床的に重要な閾値を下回っており、エビデンスの確実性も低い。\n\n【ひとこと】\n抗VEGF注射回数を減らせる利点はあるものの、視力や解剖学的転帰の上乗せ効果は臨床的に小さくエビデンスの確実性も低い点に留意が必要です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
