@@ -2217,6 +2217,69 @@
       "summary": "【タイトル和訳】\n増殖硝子体網膜症を合併した網膜剥離における黄斑部の構造と機能\n\n【背景・目的】\n増殖硝子体網膜症（PVR）を合併した裂孔原性網膜剥離（RRD）に対する手術後の黄斑部構造変化は十分に解明されていない。本研究では、PVR合併RRDに対しシリコーンオイル（SO）タンポナーデ併用硝子体手術（PPV）を施行した眼を対象に、光干渉断層計（OCT）による黄斑構造の経時的変化と術後12か月の視機能との関連を評価した。\n\n【方法】\nPVR-C合併RRDを対象としたRCTの事後解析で、SO併用PPVを施行した139眼を解析した。術前、術後10日、6か月、12か月にSD-OCTと最高矯正視力（BCVA, LogMAR）を評価し、多変量ロジスティック回帰分析等を用いて12か月後のBCVAを予測する早期構造指標を探索した。\n\n【主な結果】\n中心網膜厚は術後10日の314.9µmから12か月で370.9µmへ有意に増加した（p<0.0001）。黄斑前膜（ERM）は10日の22.1%から6か月で41.2%、12か月で49.6%へ、嚢胞様黄斑浮腫（CMO）は20.7%から52.2%、62.6%へと増加した。平均BCVAは術前1.68から10日に1.06へ有意に改善したが（p<0.0001）、12か月（0.92）までに有意な追加改善はなかった。多変量解析では、術後10日のBCVA（aOR 3.52）およびOCT上の広範な全層網膜破綻（aOR 10.51）が、12か月後の中等度視力障害（LogMAR>0.80）と独立して関連していた（AUC 0.71）。\n\n【結論・臨床的意義】\n術後黄斑はERMやCMOの増加を伴う細胞リモデリングを呈する。術後10日という極めて早期のOCT所見と視力が、12か月後の視力予後予測に有用であることが示された。\n\n【ひとこと】\nPVR術後わずか10日目の網膜全層破綻の有無や初期視力が1年後の最終視力予測に直結することを示した実用的な報告です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42950065",
+      "topic": "cornea",
+      "sent_on": "2026-10-29",
+      "title": "Extensively Drug-Resistant Pseudomonas aeruginosa Keratitis After Photorefractive Keratectomy Because of Contaminated Eye Drops: Experience With Colistin-Based Therapy.",
+      "authors": [
+        "Shrotriya CR",
+        "Joseph J",
+        "Bagga B"
+      ],
+      "journal": "Cornea",
+      "year": "2026",
+      "doi": "10.1097/ICO.0000000000004352",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42950065/",
+      "summary": "【タイトル和訳】\n汚染点眼薬による屈折矯正角膜切除術（PRK）後の広範囲薬剤耐性緑膿菌角膜炎：コリスチンを用いた治療経験\n\n【背景・目的】\nPRK後に発症した広範囲薬剤耐性（XDR）緑膿菌による感染性角膜炎の臨床的・微生物学的特徴を報告し、感染源を特定すること。\n\n【方法】\nインドの三次眼科医療機関において、異なる施設・時期に両眼PRKを受け術後に角膜炎を発症した4例7眼を対象に、後方視的に臨床所見、微生物学的検査、治療内容、転帰データを分析した（期間：2024年3月〜2025年8月）。\n\n【主な結果】\n受診までの期間は平均2.5日（範囲：1〜4日）で、視力は20/50から光覚弁（光覚投射不正確）であった。7眼中5眼で中央部全層性の浸潤と重度実質融解を認め、1眼は実質中間層浸潤、1眼は前部実質点状浸潤を呈し、6眼で前房蓄膿を伴った。全例で培養から緑膿菌が同定され、全抗菌薬に耐性でコリスチンのみ中等度感性を示した。0.19%コリスチン点眼単独で6眼が治癒し、1眼に治療的角膜移植術（TPK）が施行された。感染源の調査では、患者が使用した残余点眼薬および同製品の未開封点眼薬から、同一耐性パターンを持つ菌が検出された。\n\n【結論・臨床的意義】\nPRK後のXDR感染症の早期診断、感染源の同定、および微生物検査に基づく迅速な治療が良好な治療成績につながる。\n\n【ひとこと】\n汚染点眼薬によるPRK後の超多剤耐性緑膿菌角膜炎に対し、感受性結果に基づいたコリスチン点眼治療の有用性を示した貴重な報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42640633",
+      "topic": "vitreous",
+      "sent_on": "2026-10-29",
+      "title": "Is vitreoretinal traction the cause of 'Combined Hamartoma of the Retina and Retinal Pigment Epithelium' (CHRRPE)? A case series and proposal for 'Traction-Induced Retinal and Retinal Pigment Epithelium Lesion' (TRIPEL).",
+      "authors": [
+        "Varma S",
+        "Moynihan V",
+        "Wagner SK",
+        "Coupland SE",
+        "Sagoo MS",
+        "Wong SC",
+        "Henderson RH"
+      ],
+      "journal": "Retina (Philadelphia, Pa.)",
+      "year": "2026",
+      "doi": "10.1097/IAE.0000000000004965",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42640633/",
+      "summary": "【タイトル和訳】\n硝子体網膜牽引は「網膜・網膜色素上皮複合過誤腫（CHRRPE）」の原因か？症例シリーズおよび「牽引誘発性網膜・網膜色素上皮病変（TRIPEL）」の提唱\n\n【背景・目的】\nCHRRPEは従来、過誤腫性増殖が成因とされてきました。本研究では、後部硝子体膜（PHM）の牽引が主たる病因であり、網膜やRPEの変化は二次的なものであるという仮説を立て、画像所見および手術成績から検討しました。\n\n【方法】\nOCT画像が記録されているCHRRPE患者64眼を対象とした、2施設による後ろ向き連続症例研究です。\n\n【主な結果】\n平均年齢は16.2±16.9歳でした。OCTにおいてPHMの癒着と肥厚が97%に認められ、76%で広範（1500µm超）に付着し、全眼で牽引所見（mini-peaks 69%、maxi-peaks 73%）を認めました。経過観察が行われた36眼中、手術群（15眼）は非手術観察群と比較して若年（6.6歳 vs 15.0歳、p=0.010）、黄斑型が多く（80% vs 50%、p=0.008）、術前視力が不良でした（1.01±0.62 logMAR vs 0.52±0.38 logMAR、p=0.024）。手術により観察群と比べて中心網膜厚の有意な減少（-183±168µm vs -47.4±179µm、p=0.007）、臨床的な色素変化の縮小（100% vs 15%、p<0.001）、視力改善（-0.26±0.46 logMAR vs +0.29±0.67 logMAR、p=0.045）が示され、術後は全例で牽引所見が消失しました。\n\n【結論・臨床的意義】\n硝子体網膜牽引がCHRRPEを決定づける特徴と考えられ、この病態生理を反映する疾患概念としてTRIPELを提唱します。\n\n【ひとこと】\n従来の過誤腫という疾患概念を問い直し、硝子体牽引の解除が視力・構造的改善をもたらす可能性を示した点で臨床的価値が高い報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42946898",
+      "topic": "retina",
+      "sent_on": "2026-10-29",
+      "title": "Evidence of an aging-like foveal profile in healthy fellow eyes of patients with idiopathic macular hole.",
+      "authors": [
+        "Julio G",
+        "Delàs B",
+        "Larena R",
+        "Fernández-Engroba J",
+        "Ruiz-Monclús N",
+        "Sanjuán P",
+        "Asaad M",
+        "Barraquer RI"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07537-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42946898/",
+      "summary": "【タイトル和訳】\n特発性黄斑円孔患者の健康な僚眼における加齢様中心窩プロファイルの証拠\n\n【背景・目的】\n特発性黄斑円孔（IMH）患者の健康な僚眼において、加齢変化に類似した中心窩プロファイルが認められるかを評価すること。\n\n【方法】\n片眼性IMH患者の健康な僚眼62眼（女性44眼、男性18眼、平均年齢67.02±6.35歳）を対象とし、年齢と性別をマッチさせた対照群と比較する横断研究を実施した。OCTおよびOCTAを用いて、中心窩無血管領域（FAZ）面積、浅層毛細血管叢の血管密度（VD）および灌流密度（PD）、中心窩厚（CFT）、外境界膜（ELM）厚、エリプソイドゾーン（EZ）厚、5部位の脈絡膜厚（ChT）を測定した。OCTで異常所見を認めた眼は除外した。\n\n【主な結果】\n対照群と比較して、僚眼ではFAZ面積が有意に拡大し（p=0.002）、VD（p=0.002）およびPD（p=0.003）が有意に低下していた。さらに、CFTの有意な菲薄化（p<0.001）に加え、ELM厚（p=0.001）およびEZ厚（p=0.005）も有意に薄かった。ChTの減少も観察されたが、有意差はみられなかった。\n\n【結論・臨床的意義】\nIMH患者の正常に見える僚眼の中心窩は、加齢様プロファイルの特徴と一致していた。このような生理的退行変化の増大が接線方向の硝子体中心窩牽引の影響を増強させ、IMHの発症リスクを高める決定因子の1つになり得ると考えられる。\n\n【ひとこと】\nOCTで一見正常な僚眼でも微細構造や毛細血管網の加齢性劣化が生じていることを定量的に示し、IMH発症素因を考える上で示唆に富む研究です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
