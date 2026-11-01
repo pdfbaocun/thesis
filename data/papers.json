@@ -2418,6 +2418,84 @@
       "summary": "【タイトル和訳】\n新生血管型加齢黄斑変性（nAMD）または糖尿病黄斑浮腫（DME）患者におけるアフリベルセプト8 mgのリアルワールドアウトカム：単一施設後方視的データ解析\n\n【背景・目的】\n日常診療下でアフリベルセプト8 mgの投与を受けたnAMDおよびDME患者を対象に、12か月にわたる視機能や解剖学的転帰、投与間隔、治療歴や性別によるサブグループ効果を評価すること。\n\n【方法】\n2024年2月から2026年5月の間にアフリベルセプト8 mgによる治療を受けた成人患者の後方視的単一施設研究。主要評価項目は3、6、12か月時点における最高矯正視力（BCVA）および中心網膜厚（CST）の変化とした。\n\n【主な結果】\n113例138眼が解析された。中央値BCVAはnAMD（0.398 logMAR）、DME（0.301 logMAR）ともに12か月間有意差なく維持された（p > 0.025）。中央値CSTはnAMDで-22.0 µm、DMEで-10.0 µm減少し、nAMDでは3・6か月時点、DMEでは6か月時点で有意に縮小した（p < 0.025）。投与間隔は両疾患で有意に延長した（p < 0.05）。nAMDでは未治療眼が既治療眼より有意に大きな解剖学的改善を示した。軽度の無菌性眼内炎が1例生じたが、永続的な視力低下なく軽快した。\n\n【結論・臨床的意義】\nアフリベルセプト8 mgは日常診療において、既治療例を多く含むnAMDおよびDMEに対し、視力維持、解剖学的改善、投与間隔の延長をもたらし良好な疾患コントロールを示した。\n\n【ひとこと】\n実臨床において既治療例を含むnAMD・DME患者に対する視力維持と投与間隔延長の有用性を確認できる論文です。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42962988",
+      "topic": "cornea",
+      "sent_on": "2026-11-01",
+      "title": "Pediatric Endothelial Keratoplasty: A Modified Delphi Consensus by the EKLG Study Group on Indications, Surgical Techniques, and Postoperative Care.",
+      "authors": [
+        "Gupta N",
+        "Ramappa M",
+        "Serafino M",
+        "Ali A",
+        "Conner E",
+        "Hamada S",
+        "Pineda R",
+        "Busin M",
+        "Cremona F",
+        "Gimeno FL",
+        "Pereira NC",
+        "Prescott C",
+        "Romano V",
+        "Trief D",
+        "Watson SL",
+        "Wylegala E",
+        "Zaidman G",
+        "Mehta JS",
+        "Nischal KK"
+      ],
+      "journal": "American journal of ophthalmology",
+      "year": "2026",
+      "doi": "10.1016/j.ajo.2026.10.013",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42962988/",
+      "summary": "【タイトル和訳】\n小児角膜内皮移植術：適応、手術手技、および術後管理に関するEKLG研究グループによる修正デルファイ法コンセンサス\n\n【背景・目的】\n小児角膜内皮移植術（EK）における患者選択、時期、術前評価、術式、術中基準、術後管理に関する国際的エキスパートの合意を特定し、習熟過程にある術者に実践的な枠組みを提供すること。\n\n【方法】\n角膜内皮移植および小児角膜疾患の専門医を対象とした修正デルファイ法研究。2回の電子質問票とハイブリッド討議を実施した。合意は70％以上の一致、60〜69.9％をほぼ合意と定義した。\n\n【主な結果】\n適応として先天性遺伝性角膜内皮ジストロフィ、無水晶体・偽水晶体眼角膜浮腫、先天緑内障による持続性浮腫、外傷・医原性不全が合意され、全層角膜移植後の内皮不全、視覚的影響のあるHaab線条、鉗子分娩損傷も支持された。重度の前眼部形成異常は不適応とされた。手術時期は年齢基準ではなく弱視リスクに基づいて決定すべきとされた。術式はDSAEKおよびultrathin-DSAEKが主流で、DMEKは解剖学的問題のない年長児に限定された。術中は角膜径に対するドナーのアンダーサイズや空気タンポナーデが支持され、術後は6か月以上の局所ステロイド投与と眼圧監視が推奨された。\n\n【結論・臨床的意義】\n小児EKの臨床管理に関する国際的な推奨が確立され、診療の標準化や今後の多施設共同研究の基盤となる。\n\n【ひとこと】\n症例数が少なく難度の高い小児EKについて、適応から周術期管理まで国際専門家の合意事項を体系的に把握できる実用性の高い指針です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42616089",
+      "topic": "vitreous",
+      "sent_on": "2026-11-01",
+      "title": "Quantification of vitreous VEGF-A121 and VEGF-A165 using an isoform-specific ELISA in proliferative diabetic retinopathy.",
+      "authors": [
+        "Funatsu R",
+        "Yamakuchi M",
+        "Takenouchi K",
+        "Azuma Y",
+        "Sakamoto T",
+        "Hashiguchi T",
+        "Terasaki H"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07443-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42616089/",
+      "summary": "【タイトル和訳】\n増殖糖尿病網膜症におけるアイソフォーム特異的ELISAを用いた硝子体中VEGF-A121およびVEGF-A165の定量\n\n【背景・目的】\n眼疾患における血管内皮増殖因子（VEGF）-Aアイソフォーム同定に対する特異的ELISAの有用性を、増殖糖尿病網膜症（PDR）を代表モデルとして評価すること。\n\n【方法】\n2016年1月から2023年8月に硝子体切除術が施行された黄斑上膜（ERM）、裂孔原性網膜剥離（RRD）、PDR患者を対象とした単一施設の後ろ向きコホート研究。VEGF-Aアイソフォーム特異的ELISAを用いて硝子体中のVEGF-A121およびVEGF-A165濃度を測定し、群間比較を行った。\n\n【主な結果】\n対象は48名48眼（ERM 12眼、RRD 26眼、PDR 10眼）。硝子体中VEGF-A121濃度はPDR眼で有意に高値であった（vs ERM：P＝2.0×10^-4、vs RRD：P＝2.9×10^-5）。VEGF-A165濃度も同様の傾向を示した（vs ERM：P＝1.0×10^-4、vs RRD：P＝1.0×10^-4）。RRDとERM間では両アイソフォームに有意差を認めなかった（VEGF-A121：P＝0.855、VEGF-A165：P＝0.136）。年齢・性別調整後、PDR眼のVEGF-A165値は患者のeGFR（β＝-3.5、P＝0.040）およびHbA1c値（β＝-84.6、P＝0.020）と負の相関を示した。\n\n【結論・臨床的意義】\n特異的ELISAにより硝子体中VEGF-Aアイソフォームの測定が可能であることが実証され、その定量はPDRにおける重要なバイオマーカーとなる可能性が示された。\n\n【ひとこと】\n硝子体内VEGF-Aをアイソフォーム別に特異的定量できる技術的有用性を示す一方、PDRが10眼と少数例での検討である点には留意が必要です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42963974",
+      "topic": "retina",
+      "sent_on": "2026-11-01",
+      "title": "Retinal capillary density in relation to diabetes duration and levels of glycaemia in young patients with type 1 diabetes.",
+      "authors": [
+        "Torm MEW",
+        "Johannesen J",
+        "Christensen JL",
+        "Dahl VA",
+        "Hajari JN",
+        "Klefter ON",
+        "Larsen M"
+      ],
+      "journal": "Acta ophthalmologica",
+      "year": "2026",
+      "doi": "10.1111/aos.70255",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963974/",
+      "summary": "【タイトル和訳】\n若年1型糖尿病患者における糖尿病罹患期間および血糖レベルと網膜毛細血管密度の関連\n\n【背景・目的】\n若年1型糖尿病（T1D）患者を対象に、網膜毛細血管叢の特徴を評価し、糖尿病罹患期間および血糖レベルとの相関を明らかにすること。\n\n【方法】\n前向きコホート研究のベースラインデータを用いた横断的解析。6〜32歳のT1D患者69名（罹患期間半年以下、5年、10年、15年の群）と年齢をマッチさせた健康対照者53名（8〜34歳）を対象とした。黄斑部OCTAおよび広角眼底撮影を行い、主要評価項目を表層毛細血管叢（SCP）の毛細血管密度とした。過去のHbA1c値は後方視的に収集した。\n\n【主な結果】\n健常者と比較し、T1D群は黄斑部SCP密度が3.0%低く（p=5.92×10^-6）、総無灌流領域が0.18 mm2広かった（p=0.0033）。罹患期間半年超の患者（52名）における重回帰分析では、過去のHbA1c高値はSCP密度低下（p=0.016）および総無灌流領域拡大（p=4.4×10^-5）と有意に相関したが、罹患期間は有意に相関しなかった（それぞれp=0.42、0.92）。年齢は無灌流領域拡大とのみ相関した（p=0.037）。深層毛細血管叢でも同様だが軽度の障害が認められた。\n\n【結論・臨床的意義】\n罹患期間5年以上のT1DではSCP密度が低下しており、過去の高HbA1cにより悪化することが示唆された。厳格な血糖管理が毛細血管灌流の維持を促進することを支持する結果である。\n\n【ひとこと】\n若年1型糖尿病の早期網膜微小循環障害において、罹患期間以上に過去の血糖コントロール状態が血管密度低下や無灌流領域拡大に直結することを示した点で臨床的価値が高い研究です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
