@@ -2817,6 +2817,70 @@
       "summary": "【タイトル和訳】\n硫酸化多糖類への曝露と網膜所見との潜在的関連性の探索\n\n【背景・目的】\n間質性膀胱炎治療薬のペントサンポリ硫酸ナトリウム（PPS）は特徴的な黄斑毒性を引き起こすことが知られています。近年の症例報告において、類似の硫酸化多糖類であるフォンダパリヌクスでも同様の表現型が示され、クラス効果の可能性が示唆されました。本研究では、PPS以外の硫酸化多糖類への曝露と、PPS黄斑症に類似した網膜画像所見との関連性を探索することを目的としました。\n\n【方法】\n2018〜2024年の単一施設後方視的研究です。電子カルテからフォンダパリヌクス、エノキサパリン、コンドロイチン含有製品、アルギン酸含有製品、ダルテパリンの曝露歴があり、期間内に黄斑画像検査を受けた成人を抽出しました。網膜専門医が画像を読影し、PPS黄斑症類似所見を評価しました。短期使用例が多いエノキサパリンは1年超の曝露例に限定しました。\n\n【主な結果】\n計218例（アルギン酸12例、フォンダパリヌクス25例、コンドロイチン硫酸111例、エノキサパリン70例）を評価しました。初回画像検査時の平均年齢は67.4歳、59.5%が女性でした。典型的なPPS黄斑症に類似した症例は認められませんでした。診断未確定の軽微な黄斑色素変化が一部で観察されました［フォンダパリヌクス1例（4.0%）、コンドロイチン硫酸3例（2.7%）、アルギン酸1例（8.3%）］。\n\n【結論・臨床的意義】\nPPS以外の硫酸化多糖類曝露と典型的PPS黄斑症類似病変との関連は同定されませんでした。まれな関連の有無を明らかにするには、より大規模な研究が必要です。\n\n【ひとこと】\nフォンダパリヌクス等による黄斑毒性のクラス効果を後方視的に検討し否定的な結果を得た報告ですが、まれな病変の検出にはさらなる症例数の蓄積を要する点に留意すべきです。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "42988980",
+      "topic": "cornea",
+      "sent_on": "2026-11-07",
+      "title": "Six-month efficacy and safety of toric implantable collamer lens implantation in myopic eyes with asymmetric bow-tie corneal astigmatism: a prospective comparative study.",
+      "authors": [
+        "Ding X",
+        "Wei D",
+        "Zhu X",
+        "Wang W",
+        "Li S"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07594-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988980/",
+      "summary": "【タイトル和訳】\n非対称ボウタイ型角膜乱視を伴う近視眼におけるトーリック眼内コンタクトレンズ（TICL）挿入術の6か月間の有効性と安全性：前向き比較研究\n\n【背景・目的】\n非対称ボウタイ型角膜乱視を有する近視患者を対象に、TICL挿入術の術後6か月における有効性と安全性を評価すること。\n\n【方法】\nTICL挿入術を施行した非対称ボウタイ乱視群25眼（16例）および対称ボウタイ乱視群41眼（24例）を対象とした前向きコホート研究である。Pentacam HRで角膜形状を解析し、術前および術後1、3、6か月に裸眼視力（UDVA）、矯正視力（CDVA）、屈折度数、高次収差（HOAs）を評価した。乱視変化の解析にはベクター解析を用いた。\n\n【主な結果】\n術後、両群ともに100%の眼でUDVA 20/20以上を達成し、UDVAは術前CDVAと同等以上となった。等価球面度数±0.50 D以内を達成した割合は非対称群80%、対称群83%であった。術前乱視は非対称群-2.24±0.85 D、対称群-2.11±0.92 Dであったが、術後6か月ではそれぞれ-0.60±0.41 D、-0.47±0.35 Dへと有意に軽減し（いずれもP<0.01）、群間に有意差はなかった。Correction indexは非対称群0.85±0.26、対称群0.94±0.21（P>0.05）であった。HOAsは両群で増加したものの群間差はなく、合併症の報告もなかった。\n\n【結論・臨床的意義】\n術後6か月において、TICL挿入術は非対称ボウタイ型角膜乱視の矯正に有効かつ安全であり、対称ボウタイ乱視と同等の屈折および視覚転帰が得られることが示された。\n\n【ひとこと】\n角膜形状が非対称な乱視眼に対しても、TICL挿入術が対称眼に劣らない矯正精度と安全性を示すことを前向きに実証した臨床的に有意義な論文です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42993209",
+      "topic": "vitreous",
+      "sent_on": "2026-11-07",
+      "title": "COMPARISON OF TRACTION FORCES IN EX VIVO VITRECTOMY USING 25+®G 20K CPM DUAL-BLADE AND 25+®G 10K CPM SINGLE-BLADE VITRECTOMY PROBES.",
+      "authors": [
+        "Charles S",
+        "Zhu Y",
+        "Wuyyuru V",
+        "Mcdonell B"
+      ],
+      "journal": "Retina (Philadelphia, Pa.)",
+      "year": "2026",
+      "doi": "10.1097/IAE.0000000000005048",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42993209/",
+      "summary": "【タイトル和訳】\n25+G 20,000 CPMデュアルブレードおよび25+G 10,000 CPMシングルブレード硝子体プローブを用いたex vivo硝子体手術における牽引力の比較\n\n【背景・目的】\n吸引流量を揃えた条件下において、25+G 20,000カット/分（CPM）デュアルブレード硝子体プローブ（HYPERVIT）と、25+G 10,000 CPMシングルブレード硝子体プローブ（Advanced ULTRAVIT）により生じる硝子体牽引力を比較すること。\n\n【方法】\nウシ硝子体を用いた模擬ex vivo硝子体手術モデルを使用した。各プローブ（各群n=10）をBSSチャンバー内の硝子体に係合させ、フォースセンサーで牽引力を記録した。流量を一致させるため、吸引圧をデュアルブレードで260 mmHg、シングルブレードで340 mmHgに設定し、各パーセンタイルで牽引力を測定した。\n\n【主な結果】\n流量一致条件下において、デュアルブレードプローブはより低い牽引力を示した。0.5 mN未満を除外した検討では、90、95、99パーセンタイルの牽引力がそれぞれ12.8%、14.4%、14.4%低値であった（p<0.05）。全体平均、平均ピーク、平均最大牽引力はそれぞれ8.01%、15.78%、12.22%低減した（p<0.05）。シングルブレードプローブの牽引力（全体平均、平均ピーク、平均最大）はそれぞれ1.60±0.07 mN、2.93±0.14 mN、6.97±0.38 mNであったのに対し、デュアルブレードプローブでは1.47±0.04 mN、2.46±0.12 mN、6.12±0.26 mNであった（p<0.05）。\n\n【結論・臨床的意義】\n流量を一致させた実験条件下において、25+G 20K CPMデュアルブレードプローブは25+G 10K CPMシングルブレードプローブよりも低い牽引力を生成した。\n\n【ひとこと】\nウシ眼を用いたex vivoモデルにおいて、20Kデュアルブレードプローブが流量を維持しつつ網膜への牽引力を低減できることを数値で示した報告です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42988981",
+      "topic": "retina",
+      "sent_on": "2026-11-07",
+      "title": "Epiretinal membrane and cystoid macular oedema after vitrectomy for giant retinal tear-related retinal detachment: the Manchester GRT Study.",
+      "authors": [
+        "Kiraly P",
+        "Hussain M",
+        "Moussa G",
+        "Ivanova T",
+        "Christou EE",
+        "Huelin FJ",
+        "Dhawahir-Scala F",
+        "Patton N",
+        "Jasani KM",
+        "Jalil A"
+      ],
+      "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
+      "year": "2026",
+      "doi": "10.1007/s00417-026-07593-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988981/",
+      "summary": "【タイトル和訳】\n巨大裂孔網膜剥離に対する硝子体手術後の網膜前膜および嚢胞様黄斑浮腫：マンチェスターGRT研究\n\n【背景・目的】\n巨大裂孔網膜剥離（GRT-RRD）に対する初回硝子体手術（PPV）後における、網膜前膜（ERM）と嚢胞様黄斑浮腫（CMO）の発生率、予測因子、視機能への影響を明らかにすること。\n\n【方法】\n初回PPVを施行したGRT-RRD 110眼の後方視的コホート研究。術後OCTで評価可能であった90眼を対象に、中心1mm内のERM（stage 1-4）およびCMO（網膜内液）を評価した。術前、2か月時、退院時の最良矯正視力（BCVA）と中心網膜厚（CRT）を測定し、予測因子を解析した。\n\n【主な結果】\nERMは60.0%（54/90眼）、CMOは28.9%（26/90眼）に発生した。ERMのうちstage 2-4は44.5%（24/54眼）で、25.9%（14/54眼）が膜剥離術を受けた。多変量解析で近視はERM発生低下と独立して関連し（aOR 0.30; 95% CI 0.11-0.83）、単変量解析では外傷がリスクを上昇させた（OR 4.86; 95% CI 1.02-23.20）。CMOの有意な予測因子はなかった。ERMまたはCMO合併眼は退院時CRTが有意に厚かったが（p<0.05）、退院時BCVAに非合併眼との有意差は認められなかった。\n\n【結論・臨床的意義】\nGRT-RRD術後のERM発生頻度は非常に高い一方、CMO発生率は非GRTと同程度であった。CRT肥厚にもかかわらず最終BCVAは有意に悪化しなかったが、高リスク例では初回手術時の内境界膜剥離が考慮され得る。\n\n【ひとこと】\nGRT術後におけるERMの極めて高い発生頻度と、高リスク症例に対する初回ILM剥離の妥当性を検討する上で参考になる論文です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
