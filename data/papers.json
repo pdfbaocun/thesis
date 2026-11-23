@@ -3922,6 +3922,72 @@
       "summary": "【タイトル和訳】\n臨床的に検出可能な網膜症を伴わない前臨床期糖尿病網膜神経変性の機能的特徴：mfERGとmfPOPの併用研究\n\n【背景・目的】\n臨床的網膜症のない2型糖尿病眼（noDR）を対象に、多局所網膜電図（mfERG）と多局所瞳孔記録客観的視野検査（mfPOP; OFA）の診断能、局所的一致性、および短期再現性を比較・評価すること。\n\n【方法】\nnoDR眼20眼と年齢・性別等をマッチさせた対照20眼に対し、ISCEV標準mfERGとOFA検査を施行した。中心窩、傍中心窩、中心窩周囲の3領域で解析を行い、群間比較、ROC解析、相関分析、級内相関係数（ICC）等により評価した。\n\n【主な結果】\nOFAの全体感度・遅延指標および各領域のトータル偏差（TD）は、noDR眼の全3領域で有意に悪化した。mfERGのRMSおよびP1振幅は全領域で低下し、P1潜時は中心窩と傍中心窩で延長した。識別能は傍中心窩でmfERG P1潜時がOFA Delay TDより高く（p=0.039）、中心窩周囲ではOFA Delay TDが高かった（p=0.034）。noDR群内における両検査の局所相関は全9項目で有意差がなかった。OFAの感度MDおよび遅延MDは極めて良好な同日再現性を示した（ICC=0.980、0.984）。\n\n【結論・臨床的意義】\n両検査は網膜症発症前の領域依存的な機能異常を検出するが、一致性の低さから一部異なる情報を捉えている可能性が示唆された。予後予測能の確立には縦断研究が必要である。\n\n【ひとこと】\n網膜症発症前の機能評価において、mfERGとmfPOPが網膜の異なる部位や機能的側面を反映している可能性を示した点で注目に値します。",
       "notified": true,
       "scheduled": true
+    },
+    {
+      "pmid": "43042466",
+      "topic": "cornea",
+      "sent_on": "2026-11-23",
+      "title": "Early Diagnosis and Prognosis of Corneal and Ocular Surface Pathologies Using Artificial Intelligence: A State-of-the-art Review.",
+      "authors": [
+        "Molero-Senosiaín M",
+        "Pérez-García P",
+        "Burgos-Blasco B",
+        "Benítez Del Castillo Sánchez JM"
+      ],
+      "journal": "Cornea",
+      "year": "2026",
+      "doi": "10.1097/ICO.0000000000004312",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042466/",
+      "summary": "【タイトル和訳】\n人工知能を用いた角膜および眼表面疾患の早期診断と予後予測：最新レビュー\n\n【背景・目的】\n角膜および眼表面疾患の早期診断における人工知能（AI）の拡大する役割を明らかにすることです。AIには診断精度の向上、臨床ワークフローの効率化、臨床症状が顕在化する前の病態検出を促進する可能性があります。\n\n【方法】\nPubMedを用い、過去10年間に発表されたAIによる診断手法と予後予測モデルに関する英語論文を対象に、記述的文献レビューを実施しました。症例報告や非原著研究、AIの関与が乏しい研究は除外し、AI手法、画像技術、診断性能指標、臨床的関連性を抽出して評価しました。\n\n【主な結果】\n数値の記載はありません。AIを活用した機械学習モデルは膨大な画像データを解析し、従来の診断法では捉えられない潜在的異常を検出可能です。この能力は、微細な形態変化が臨床所見に先行する円錐角膜の早期検出、角膜ジストロフィ、感染性角膜炎、結膜腫瘍、ドライアイやスティーブンス・ジョンソン症候群などの疾患において特に有用とされています。\n\n【結論・臨床的意義】\nAIの導入は、角膜疾患診療に高い精度、効率性、拡張性をもたらし、眼科医療を大きく変革する可能性があります。早期発見と個別化評価により診断のばらつきを減らし、意思決定を加速させます。臨床応用には実世界での検証や倫理的課題への対応など多領域の連携が不可欠です。\n\n【ひとこと】\n角膜・眼表面疾患に対するAIの早期診断能や画像解析の到達点、実臨床への導入課題を整理して把握するのに有用な総説です。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "42658077",
+      "topic": "vitreous",
+      "sent_on": "2026-11-23",
+      "title": "PREDICTIVE FACTORS FOR VISUAL ACUITY AND METAMORPHOPSIA AFTER EPIRETINAL MEMBRANE SURGERY.",
+      "authors": [
+        "Johannigmann-Malek N",
+        "Deichl K",
+        "Coulibaly L",
+        "Maier M",
+        "Charbel Issa P",
+        "Wiederholt N",
+        "Gabka K",
+        "Kirchmair K",
+        "Kaye SB",
+        "Baumann C"
+      ],
+      "journal": "Retina (Philadelphia, Pa.)",
+      "year": "2026",
+      "doi": "10.1097/IAE.0000000000005002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42658077/",
+      "summary": "【タイトル和訳】\n黄斑前膜手術後における視力および変視症の予測因子\n\n【背景・目的】\n黄斑前膜手術後における最高矯正視力（BCVA）および変視症の予測因子を同定すること。\n\n【方法】\n前向き連続症例集積研究。特発性黄斑前膜72眼を対象とし、術前、術後2、6、12か月にBCVA、垂直M-CHARTSスコア（VM-score）、水平M-CHARTSスコア（HM-score）を測定した。OCTで中心窩網膜厚、異所性中心窩内層厚、黄斑内層嚢胞、エリプソイドゾーン（EZ）破綻、cotton ball sign（CBS）の有無、中心窩陥凹消失を解析した。\n\n【主な結果】\nBCVAおよびVM/HM-scoreの改善は術後2か月までが最大で（すべてP<0.001）、2〜6か月は緩徐となり（すべてP<0.05）、以後は有意差を認めなかった（すべてP≧0.12）。全時点で異所性中心窩内層厚、黄斑内層嚢胞、EZ破綻はBCVA不良と関連した（すべてP<0.001）。術後12か月のBCVAは術前BCVA（P=0.02）、EZ破綻（P=0.04）、CBS（P=0.02）と有意に関連した。術後12か月のVM/HM-scoreは術前VM/HM-scoreと有意に関連したが（P<0.01、P<0.001）、評価したいずれの術前OCTパラメータとも有意な関連を示さなかった。\n\n【結論・臨床的意義】\n術前の視力および変視症の悪さは術後成績の不良さと相関し、EZ破綻やCBSといった視細胞異常は術後BCVA不良を予測したが、評価したOCTパラメータは術後変視症の予測因子とはならなかった。\n\n【ひとこと】\n術後変視症の予測には一般的なOCT形態指標ではなく術前M-CHARTSスコアそのものが指標となる点に留意すべきです。",
+      "notified": true,
+      "scheduled": true
+    },
+    {
+      "pmid": "43067492",
+      "topic": "retina",
+      "sent_on": "2026-11-23",
+      "title": "Retinal Structure Reflects Cumulative Blast Exposure and Blast-Related Mild Traumatic Brain Injury.",
+      "authors": [
+        "Gustafson JA",
+        "Walter K",
+        "Parenteau C",
+        "Hao S",
+        "Fortier CB",
+        "Milberg WP",
+        "Fortenbaugh FC"
+      ],
+      "journal": "American journal of ophthalmology",
+      "year": "2026",
+      "doi": "10.1016/j.ajo.2026.11.013",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067492/",
+      "summary": "【タイトル和訳】\n網膜構造は累積的な爆風曝露および爆風関連軽度外傷性脳損傷を反映する\n\n【背景・目的】\n爆風曝露は長期的な健康被害をもたらす可能性が示唆されているが、爆風関連神経外傷の客観的バイオマーカーは乏しい。本研究では、光干渉断層計（OCT）を用い、爆風関連軽度外傷性脳損傷（mTBI）や生涯累積爆風曝露量が網膜微細構造の変化と関連するかを検証した。\n\n【方法】\n退役軍人73例（平均年齢40.8歳、男性86%）を対象とした後ろ向き横断研究。Spectralis OCTを用いて黄斑部網膜各層および乳頭周囲網膜神経線維層（pRNFL）の厚みを測定し、爆風mTBI既往の有無（既往あり25例、なし48例）や累積爆風曝露量との関連を評価した。\n\n【主な結果】\n爆風mTBI群では中心窩周囲3mm領域で黄斑部網膜層が有意に厚かったが、pRNFLは有意に菲薄化しており（p = .009）、特に上鼻側で顕著であった（p < .001）。累積曝露量の増加はpRNFL菲薄化（ρ = -.288、p = .013）および黄斑外層の肥厚（ρ = .319、p = .007）と有意に相関した。交差検証において、pRNFL、外網状層、網膜外層の厚みは累積爆風曝露量を有意に予測した（r = .335、p = .005）。\n\n【結論・臨床的意義】\n網膜構造パラメータは爆風関連mTBIの識別や累積曝露量の予測に有用であり、OCTが爆風による神経外傷の非侵襲的バイオマーカーになり得ることが示された。\n\n【ひとこと】\n爆風曝露歴を網膜の菲薄化と肥厚という特異的な層別変化から客観的に評価できる可能性を示した点で臨床的価値が高い報告です。",
+      "notified": true,
+      "scheduled": true
     }
   ]
 }
